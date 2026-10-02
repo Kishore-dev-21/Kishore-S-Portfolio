@@ -3,7 +3,7 @@
 **B.Tech Information Technology | Aspiring Full-Stack Software Engineer & AI Systems Developer**  
 *Department of Information Technology, Sri Sairam Engineering College, Chennai, India*
 
-[Live Portfolio](https://kishore-portfolio-seven.vercel.app/) • [LinkedIn](https://www.linkedin.com/in/kishores-) • [GitHub](https://github.com/Kishore-dev-21) • [Email](mailto:senthilkishore21012007@gmail.com)
+[Live Portfolio](https://kishore-portfolio-seven.vercel.app/) • [LinkedIn](https://www.linkedin.com/in/kishore-s-it) • [GitHub](https://github.com/Kishore-dev-21) • [Email](mailto:senthilkishore21012007@gmail.com)
 
 ---
 
@@ -178,7 +178,7 @@ All credentials and achievements presented in this repository and portfolio are 
 
 - **Email:** [senthilkishore21012007@gmail.com](mailto:senthilkishore21012007@gmail.com)
 - **Phone:** +91 9345533001
-- **LinkedIn:** [linkedin.com/in/kishores-](https://www.linkedin.com/in/kishores-)
+- **LinkedIn:** [linkedin.com/in/kishore-s-it](https://www.linkedin.com/in/kishore-s-it)
 - **GitHub:** [github.com/Kishore-dev-21](https://github.com/Kishore-dev-21)
 - **Location:** Chennai, Tamil Nadu, India
 
