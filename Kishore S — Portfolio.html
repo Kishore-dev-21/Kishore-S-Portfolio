@@ -403,6 +403,11 @@ body.play #splash-p2, .play #splash-p2, #splash.play #splash-p2 {
 @keyframes splash-show {
   to { opacity: 1; }
 }
+/* ===== IEEE Roles Grid & Proof Alignment ===== */
+#roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;align-items:stretch}
+#roles .card{display:flex !important;flex-direction:column !important}
+#roles .card>a{margin-top:auto !important}
+#roles .card img{height:140px !important;width:100% !important;object-fit:contain !important;background:var(--bg2);padding:4px;border-radius:8px;border:1px solid var(--bd)}
 </style>
 </head>
 <body>
@@ -852,7 +857,7 @@ const ROLES=[
   {t:"Technical Team Co-Lead (former)",s:"IEEE Reliability Society SEC SBC",d:"Supported technical initiatives, event coordination, planning meetings and member engagement."},
   {t:"MAGIC — Communicator",s:"IEEE Reliability Society SEC SBC",d:"Google Forms for registration and feedback, promotion of webinars and workshops, WhatsApp and social media outreach, member communication."},
   {t:"Office Bearer",s:"IEEE Industrial Electronics Society (IES) Student Chapter",d:"Current leadership role."},
-  {t:"IEEE HKN Member",s:"IEEE Eta Kappa Nu · Madras Section",d:"Selected as an IEEE-HKN Member (Member #100644147, Madras Section). Valued IEEE Member for 3 years.",ph:[{l:"IEEE-HKN Official Membership Card",src:"ieee_hkn_membership_proof.png",pdf:"ieee_hkn_membership_proof.pdf"}]}
+  {t:"IEEE HKN Member",s:"IEEE Eta Kappa Nu · Madras Section",d:"Selected as an IEEE-HKN Member (Member #100644147, Madras Section). Valued IEEE Member for 3 years.",ph:[{l:"IEEE-HKN Official Membership Card",src:"ieee_hkn_membership_card_crop.png",pdf:"ieee_hkn_membership_proof.pdf"}]}
 ];
 
 const VOL=[
