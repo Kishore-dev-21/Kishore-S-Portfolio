@@ -75,7 +75,17 @@ Third-year Information Technology undergraduate with a consistent academic recor
 
 ## Featured Engineering Projects
 
-### 1. DataMind AI
+### 1. Click2Ration User Portal
+*Citizen E-Governance Platform for Secure PDS Last-Mile Distribution*  
+- **Architecture:** React, TypeScript, Vite, Tailwind CSS, FastAPI, MySQL.
+- **Key Capabilities:**
+  - Citizen portal accompanying the research paper accepted at IEEE IC3IoT 2026.
+  - Dual-factor authentication using Ration Card ID and OTP for entitlement validation.
+  - Real-time order dispatch tracking and doorstep biometric/OTP delivery verification with digital receipts.
+  - Bilingual interface support in English and Tamil.
+- **Repository:** [GitHub](https://github.com/Kishore-dev-21/C2R_User-Portal) • **Live Platform:** [Vercel](https://ration-guard-plus-mainmap-1.vercel.app/)
+
+### 2. DataMind AI
 *Conversational Database Analytics Platform*  
 - **Architecture:** React 19, TypeScript, Vite, Tailwind CSS, TanStack Router, Zustand, FastAPI, Python, SQLAlchemy, SQLite, Google Gemini GenAI SDK, Recharts, Mermaid.
 - **Key Capabilities:**
@@ -85,16 +95,6 @@ Third-year Information Technology undergraduate with a consistent academic recor
   - Analyzes live relational data to generate real-time business insights, trend analysis, and automated Mermaid ER diagrams.
   - Features 8 analytical modules: Executive KPIs, Revenue, Orders, Products, Customers, Data Explorer, EDA, and Quality Assurance.
 - **Repository:** [GitHub](https://github.com/Kishore-dev-21/DataMind_AI) • **Live Platform:** [Vercel](https://data-mind-ai-eken.vercel.app/) • **Video Demo:** [YouTube](https://youtu.be/Qu4EPjvnV_E)
-
-### 2. EduLink+
-*Role-Based Smart Campus Information & Intelligence Platform*  
-- **Architecture:** React 18, TypeScript, Vite, Tailwind CSS, Context API, Lucide React, Supabase.
-- **Key Capabilities:**
-  - Role-isolated routing and dashboards for students and administrative faculty.
-  - Integrated AI Campus Assistant for queries regarding events, examination schedules, circulars, and scholarships.
-  - Automated Resume ATS scoring rubric with certificate and skill verification parsing.
-  - Centralized department-wise academic material repository and application tracking pipelines.
-- **Repository:** [GitHub](https://github.com/Kishore-dev-21/EduLink) • **Live Platform:** [Netlify](https://leafy-pasca-10c6dd.netlify.app/)
 
 ### 3. SGE Innovative Toolcraftt x Aluzin Diecastings
 *Production SSR Corporate Platform for Precision Manufacturing*  
@@ -113,28 +113,26 @@ Third-year Information Technology undergraduate with a consistent academic recor
   - Complete event management infrastructure for 7 concurrent technical competitions hosted by IEEE Reliability Society SEC SBC.
   - Published 100-point judging rubrics, standardized rulebooks, and integrated registration workflows.
   - Live communication channels and executive committee representation.
-- **Repository:** [GitHub](https://github.com/Kishore-dev-21/ZENTRIX-2026) • **Live Platform:** [Vercel](https://zentrix2026.vercel.app/)
+- **Repository:** [GitHub](https://github.com/Kishore-dev-21/zentrix) • **Live Platform:** [Vercel](https://zentrix-hackathon-2026-lac.vercel.app/)
 
-### 5. Click2Ration User Portal
-*Citizen E-Governance Platform for Secure PDS Last-Mile Distribution*  
-- **Architecture:** React, TypeScript, Vite, Tailwind CSS, FastAPI, MySQL.
-- **Key Capabilities:**
-  - Citizen portal accompanying the research paper accepted at IEEE IC3IoT 2026.
-  - Dual-factor authentication using Ration Card ID and OTP for entitlement validation.
-  - Real-time order dispatch tracking and doorstep biometric/OTP delivery verification with digital receipts.
-  - Bilingual interface support in English and Tamil.
-- **Repository:** [GitHub](https://github.com/Kishore-dev-21/Click2Ration-User-Portal) • **Live Platform:** [Vercel](https://click2-ration-user-portal.vercel.app/)
-
-### 6. DeepSync
+### 5. DeepSync
 *3D Geospatial & Ocean Data Visualization Platform*  
 - **Architecture:** React 19, TypeScript, Vite, Three.js, Deck.gl, Tailwind CSS, FastAPI, Python, xarray, netCDF4, NumPy.
 - **Key Capabilities:**
   - Built for INCOIS (Ministry of Earth Sciences, Govt. of India) under Smart India Hackathon 2026.
   - Fuses numerical ocean model outputs (MOM4, HYCOM) with in-situ instrument observations (Argo floats, moored buoys).
   - Provides 3D layered visualizations of Indian Ocean parameters (temperature, salinity, currents) with depth extraction down to 2,000 meters.
-- **Repository:** [GitHub](https://github.com/Kishore-dev-21/DeepSync)
+- **Repository:** [GitHub](https://github.com/Dhanush-BT/DeepsSync-Bluegen)
 
----
+### 6. EduLink+
+*Role-Based Smart Campus Information & Intelligence Platform*  
+- **Architecture:** React 18, TypeScript, Vite, Tailwind CSS, Context API, Lucide React, Supabase.
+- **Key Capabilities:**
+  - Role-isolated routing and dashboards for students and administrative faculty.
+  - Integrated AI Campus Assistant for queries regarding events, examination schedules, circulars, and scholarships.
+  - Automated Resume ATS scoring rubric with certificate and skill verification parsing.
+  - Centralized department-wise academic material repository and application tracking pipelines.
+- **Repository:** [GitHub](https://github.com/Kishore-dev-21/EduLink) • **Live Platform:** [Netlify](https://leafy-pasca-10c6dd.netlify.app/)
 
 ## Research & Academic Publications
 
