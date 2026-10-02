@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kishore S | B.Tech IT Student | Aspiring Full-Stack Web Developer</title>
+<meta name="description" content="Portfolio of Kishore S, a third-year B.Tech Information Technology student at Sri Sairam Engineering College, aspiring full-stack web developer, IEEE member, researcher, hackathon participant, student leader, and community volunteer.">
+<meta property="og:title" content="Kishore S | B.Tech IT Student | Aspiring Full-Stack Web Developer">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#f4f6fb;--bg2:#e8ecf5;--tx:#10172a;--mu:#3d4f72;--ac:#2563eb;--ac2:#7c3aed;--bd:#c9d2e6;
+  --card:rgba(255,255,255,.75);box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --glow-a:rgba(90,110,255,.38);--glow-b:rgba(190,90,255,.26);--d:1;
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#070b16;--bg2:#0d1426;--tx:#e8edf9;--mu:#b8c5de;--ac:#60b0ff;--ac2:#b89dfc;--bd:#222c47;
+    --card:rgba(16,24,44,.72);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#070b16;--bg2:#0d1426;--tx:#e8edf9;--mu:#b8c5de;--ac:#60b0ff;--ac2:#b89dfc;--bd:#222c47;
+  --card:rgba(16,24,44,.72);
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,:after,:before{box-sizing:inherit}
+body{
+  margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--tx);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* Background Canvas */
+#bg{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none}
+
+/* Nav */
+nav{
+  position:sticky;top:0;z-index:99;backdrop-filter:blur(16px);background:color-mix(in srgb,var(--bg) 80%,transparent);
+  border-bottom:1px solid var(--bd);padding:10px 0;
+}
+.nav-inner{
+  max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.nav-brand{
+  font-size:15px;font-weight:800;letter-spacing:.08em;color:var(--ac);text-decoration:none;white-space:nowrap;
+  transition:transform .2s;
+}
+.nav-brand:hover{transform:scale(1.04)}
+.nav-links{display:flex;align-items:center;gap:18px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{color:var(--tx);text-decoration:none;font-size:13.5px;font-weight:500;white-space:nowrap;transition:color .2s,transform .2s}
+.nav-links a:hover{color:var(--ac);transform:translateY(-1px)}
+
+/* Footer */
+.site-footer{
+  border-top:1px solid var(--bd);background:var(--bg2);padding:44px 0 36px;margin-top:60px;
+}
+.footer-inner{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;
+}
+.footer-left{text-align:left;max-width:620px}
+.footer-prog{font-size:14.5px;color:var(--tx);font-weight:600;margin-bottom:4px}
+.footer-motto{font-size:13px;color:var(--mu);margin:0 0 10px;line-height:1.5}
+.footer-copy{font-size:12px;color:var(--mu);opacity:.8}
+.footer-right{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.footer-name{font-size:1.6rem;font-weight:800;letter-spacing:.08em;color:var(--ac)}
+.back-to-top{
+  display:inline-block;font-size:12px;color:var(--tx);text-decoration:none;border:1px solid var(--bd);
+  padding:6px 14px;border-radius:8px;background:var(--card);transition:all .2s ease;font-weight:500;
+}
+.back-to-top:hover{border-color:var(--ac);color:var(--ac);transform:translateY(-2px)}
+
+/* Project Outline Buttons */
+.proj-btn{
+  display:inline-flex;align-items:center;gap:5px;padding:6px 14px;font-size:12.5px;font-weight:500;
+  color:var(--tx);background:var(--bg2);border:1px solid var(--bd);border-radius:8px;text-decoration:none;
+  transition:all .2s ease;
+}
+.proj-btn:hover{
+  border-color:var(--ac);color:var(--ac);background:color-mix(in srgb,var(--ac) 10%,var(--bg2));
+  transform:translateY(-2px);box-shadow:0 4px 12px color-mix(in srgb,var(--ac) 15%,transparent);
+}
+
+/* Containers & Typography */
+.w{max-width:1100px;margin:0 auto;padding:0 24px}
+section{padding:72px 0}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 8px;letter-spacing:-.02em;color:var(--tx)}
+.mu{color:var(--mu)}
+
+/* Hero Section */
+.hero{min-height:88vh;display:flex;align-items:center;padding:48px 0}
+.hero-inner{display:flex;align-items:center;justify-content:space-between;gap:40px;width:100%}
+h1{
+  font-size:clamp(2.8rem,8vw,5.5rem);line-height:1.05;margin:0 0 10px;letter-spacing:-.03em;
+  background:linear-gradient(120deg,var(--tx),var(--ac) 60%,var(--ac2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.sub{font-size:clamp(1.1rem,2.5vw,1.4rem);color:var(--tx);font-weight:500;margin:0 0 12px}
+
+/* Hero Photo Design */
+.hero-photo-wrap{position:relative;flex-shrink:0;width:310px;height:310px}
+.hero-photo-ring{
+  position:absolute;inset:-5px;border-radius:50%;
+  background:conic-gradient(from 0deg,var(--ac) 0%,var(--ac2) 40%,rgba(7,11,22,.05) 55%,var(--ac) 100%);
+  animation:photo-spin 5s linear infinite;filter:blur(.5px);
+}
+.hero-photo-glow{
+  position:absolute;inset:0;border-radius:50%;
+  box-shadow:0 0 70px color-mix(in srgb,var(--ac) 45%,transparent),inset 0 0 30px color-mix(in srgb,var(--ac2) 20%,transparent);
+}
+.hero-photo-inner{position:absolute;inset:8px;border-radius:50%;overflow:hidden;border:3px solid var(--bg);z-index:2}
+.hero-photo{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.hero-photo-dot{position:absolute;border-radius:50%;z-index:3}
+.hero-photo-dot:nth-child(1){width:12px;height:12px;background:var(--ac);top:-4px;left:50%;transform:translateX(-50%);box-shadow:0 0 10px var(--ac);animation:dot-pulse 2.5s ease-in-out infinite}
+.hero-photo-dot:nth-child(2){width:9px;height:9px;background:var(--ac2);bottom:10px;right:8px;box-shadow:0 0 8px var(--ac2);animation:dot-pulse-no-tx 2.5s ease-in-out .8s infinite}
+.hero-photo-dot:nth-child(3){width:7px;height:7px;background:var(--ac);bottom:20px;left:5px;box-shadow:0 0 7px var(--ac);animation:dot-pulse-no-tx 2.5s ease-in-out 1.5s infinite}
+
+@keyframes photo-spin{to{transform:rotate(360deg)}}
+@keyframes dot-pulse{0%,100%{opacity:1;transform:scale(1) translateX(-50%)}50%{opacity:.5;transform:scale(.7) translateX(-50%)}}
+@keyframes dot-pulse-no-tx{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
+
+/* Buttons & Tags */
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.btn{
+  display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid var(--bd);color:var(--tx);
+  text-decoration:none;background:var(--card);transition:transform .2s,border-color .2s,box-shadow .2s;font-size:14.5px;font-weight:500;
+}
+.btn:hover{transform:translateY(-2px);border-color:var(--ac);box-shadow:0 6px 18px color-mix(in srgb,var(--ac) 20%,transparent)}
+.btn.p{background:linear-gradient(120deg,var(--ac),var(--ac2));color:#fff;border:0}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tag{
+  font-size:12px;padding:4px 10px;border-radius:99px;background:var(--bg2);border:1px solid var(--bd);
+  color:var(--tx);font-weight:500;
+}
+
+/* Grids & Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{
+  background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:22px;
+  backdrop-filter:blur(10px);box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transition:border-color .25s ease,box-shadow .25s ease;
+  position:relative;
+}
+.card:hover{border-color:var(--ac);box-shadow:0 14px 36px color-mix(in srgb,var(--ac) 20%,transparent)}
+.card h3{margin:0 0 6px;font-size:1.2rem;color:var(--tx)}
+.card small{font-size:11.5px;color:var(--ac);font-weight:700;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px}
+
+/* 3D Specular Lighting */
+.card, .skill-card, .resume-showcase{transform-style:preserve-3d;will-change:transform;position:relative}
+.card-shine{
+  position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.14) 0%,rgba(255,255,255,0) 65%);
+  opacity:0;transition:opacity .3s ease;z-index:10;mix-blend-mode:overlay;
+}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:24px 0}
+.stat{background:var(--bg2);border:1px solid var(--bd);border-radius:12px;padding:14px;text-align:center}
+.stat b{font-size:1.8rem;color:var(--ac);display:block;line-height:1}
+.stat span{font-size:12px;color:var(--mu)}
+
+/* Timeline & Flow */
+.flow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--bg2);padding:12px 16px;border-radius:12px;border:1px solid var(--bd);font-size:13px}
+.flow strong{color:var(--ac)}
+.flow i{color:var(--mu);font-style:normal}
+.steps{display:flex;gap:0;margin-top:12px;font-size:12px}
+.steps span{flex:1;text-align:center;padding:6px 2px;background:var(--bg2);border:1px solid var(--bd)}
+.steps span.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+
+/* Placeholder helper */
+.ph{margin-top:10px;border:1px dashed var(--bd);border-radius:8px;padding:8px 10px;font-size:12px;color:var(--mu);letter-spacing:.04em}
+
+/* Clean & Impressive Technical Skills */
+#skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;align-items:stretch}
+.skill-card{
+  background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:22px 20px;
+  display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .35s;
+  position:relative;overflow:hidden;transform-style:preserve-3d;
+}
+.skill-card:hover{border-color:var(--ac);box-shadow:0 16px 40px color-mix(in srgb,var(--ac) 22%,transparent)}
+.skill-card-top{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap;
+}
+.skill-card-top h3{
+  margin:0;font-size:1.12rem;color:var(--tx);font-weight:600;letter-spacing:-.01em;line-height:1.3;flex:1 1 auto;min-width:160px;
+}
+.skill-card-top small{
+  font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--ac);background:var(--bg2);border:1px solid var(--bd);
+  padding:3px 10px;border-radius:99px;flex-shrink:0;align-self:flex-start;white-space:nowrap;
+}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+.skill-pill{
+  display:inline-flex;align-items:center;gap:7px;padding:7px 13px;background:var(--bg2);border:1px solid var(--bd);
+  border-radius:10px;font-size:13px;font-weight:500;color:var(--tx);transition:all .25s ease;user-select:none;
+}
+.skill-pill:hover{
+  border-color:var(--ac);transform:translateY(-2px) scale(1.03);background:color-mix(in srgb,var(--ac) 12%,var(--bg2));
+  box-shadow:0 6px 16px color-mix(in srgb,var(--ac) 25%,transparent);
+}
+.skill-dot{width:6px;height:6px;border-radius:50%;background:var(--ac);box-shadow:0 0 8px var(--ac);flex-shrink:0}
+
+/* Resume Showcase */
+.resume-showcase{
+  display:flex;align-items:center;justify-content:center;gap:36px;max-width:860px;margin:36px auto 0;
+  padding:30px;background:var(--card);border:1px solid var(--bd);border-radius:20px;
+  backdrop-filter:blur(14px);box-shadow:0 16px 48px rgba(0,0,0,.2);text-align:left;position:relative;overflow:hidden;
+}
+.resume-glow-bg{position:absolute;width:260px;height:260px;background:radial-gradient(circle,var(--ac) 0%,transparent 70%);filter:blur(40px);opacity:.25;top:10px;left:30px;pointer-events:none}
+.resume-sheet-wrap{position:relative;flex-shrink:0;width:220px;perspective:1000px}
+.resume-sheet{
+  position:relative;width:220px;border-radius:12px;overflow:hidden;border:1px solid var(--bd);
+  box-shadow:0 18px 40px rgba(0,0,0,.28);transform:rotate(-2.5deg);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s,border-color .3s;
+  cursor:pointer;background:#fff;display:block;
+}
+.resume-sheet:hover{transform:rotate(0deg) scale(1.05);box-shadow:0 24px 60px color-mix(in srgb,var(--ac) 35%,transparent);border-color:var(--ac)}
+.resume-sheet img{width:100%;height:auto;display:block}
+.resume-overlay{
+  position:absolute;inset:0;background:rgba(7,11,22,.75);display:flex;align-items:center;justify-content:center;
+  opacity:0;transition:opacity .25s ease;color:#fff;font-size:13px;font-weight:600;padding:12px;text-align:center;
+}
+.resume-sheet:hover .resume-overlay{opacity:1}
+.resume-details{flex:1;min-width:260px;z-index:1}
+.resume-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--ac);background:var(--bg2);border:1px solid var(--bd);padding:4px 10px;border-radius:99px;margin-bottom:8px}
+.resume-details h3{margin:0 0 6px;font-size:1.4rem;color:var(--tx)}
+.resume-details p{font-size:13.5px;color:var(--mu);margin:0 0 16px;line-height:1.5}
+.resume-meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}
+.resume-meta-item{background:var(--bg2);padding:8px 12px;border-radius:8px;border:1px solid var(--bd)}
+.resume-meta-item .label{display:block;font-size:10px;color:var(--mu);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.resume-meta-item .val{color:var(--tx);font-weight:500;font-size:12.5px;margin-top:2px;display:block}
+.resume-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Achievement card equal-height + proof alignment */
+#achgrid{align-items:stretch}
+#achgrid .card{display:flex !important;flex-direction:column !important}
+#achgrid .card>a,#achgrid .card>div[style*="grid"]{margin-top:auto !important}
+#achgrid .card img{height:150px !important;width:100% !important;object-fit:cover !important;object-position:top center !important}
+#achgrid .card>div[style*="grid"] a{display:flex;flex-direction:column;margin-top:0}
+#achgrid .card>div[style*="grid"] a span[style*="font-size:11px"]{min-height:20px}
+
+/* Credentials Vault equal cards */
+#vaultgrid{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+#vaultgrid .card{display:flex;flex-direction:column}
+#vaultgrid .card a[style*="margin-top"]{flex:1;display:flex;flex-direction:column}
+#vaultgrid .card a img{width:100%;height:220px;object-fit:cover;object-position:top}
+#vaultgrid .card a .btn{margin-top:auto}
+
+/* Splash intro */
+.splash{
+  position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:var(--bg);overflow:hidden;cursor:pointer;
+  transition:opacity .9s ease,transform .9s cubic-bezier(.4,0,.2,1),filter .9s ease,visibility 0s linear .9s;
+}
+.splash.leave{opacity:0;transform:scale(1.04);filter:blur(8px);visibility:hidden;pointer-events:none}
+.splash-glow{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(42vmax 30vmax at 38% 46%,var(--glow-a),transparent 70%),radial-gradient(38vmax 28vmax at 64% 56%,var(--glow-b),transparent 70%);
+  opacity:0;animation:splash-glow-in 2.4s ease-out .2s forwards,splash-breathe 14s ease-in-out 2.6s infinite alternate;
+}
+@keyframes splash-glow-in{to{opacity:1}}
+@keyframes splash-breathe{from{transform:scale(1)}to{transform:scale(1.08) translateY(-1.5%)}}
+.splash-hero{position:relative;display:flex;flex-direction:column;align-items:center;width:min(86vw,640px);text-align:center;z-index:2}
+.splash svg{display:block;width:100%;height:auto;overflow:visible}
+.splash-stroke{fill:none;stroke:var(--tx);stroke-width:14.8883;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+.play #splash-p1{animation:splash-draw calc(.8s * var(--d)) ease-in-out forwards,splash-show .4s ease-in-out forwards}
+.play #splash-p2{animation:splash-draw calc(2.8s * var(--d)) ease-in-out calc(.7s * var(--d)) forwards,splash-show .7s ease-in-out calc(.7s * var(--d)) forwards}
+@keyframes splash-draw{to{stroke-dashoffset:0}}
+@keyframes splash-show{to{opacity:1}}
+.splash-intro{margin-top:clamp(28px,6vh,56px)}
+.splash-rise{opacity:0;transform:translateY(14px)}
+.play .splash-rise{animation:splash-rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.play .splash-r1{animation-delay:3.5s}
+.play .splash-r2{animation-delay:3.8s}
+@keyframes splash-rise{to{opacity:1;transform:none}}
+.splash-intro h1{margin:0;font-size:clamp(2rem,6vw,3.4rem);font-weight:600;letter-spacing:-.025em;line-height:1.08;color:var(--tx);background:none;-webkit-background-clip:unset;background-clip:unset}
+.splash-role{margin:.75rem auto 0;max-width:40ch;font-size:clamp(1rem,2.4vw,1.2rem);line-height:1.45;color:var(--mu)}
+.splash-skip-hint{margin-top:24px;font-size:12px;letter-spacing:.08em;color:var(--mu);opacity:.5;transition:opacity .3s}
+.splash:hover .splash-skip-hint{opacity:.9}
+
+/* Responsive Media Queries */
+@media(max-width:680px){
+  .hero-inner{flex-direction:column-reverse;text-align:center;align-items:center}
+  .hero-photo-wrap{width:220px;height:220px}
+  .resume-showcase{flex-direction:column;text-align:center;gap:24px;padding:22px}
+  .resume-sheet-wrap{width:180px}
+  .resume-sheet{width:180px;transform:none}
+  .resume-meta-grid{grid-template-columns:1fr;text-align:left}
+  .resume-actions{justify-content:center}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .splash-glow{animation:splash-glow-in .01s forwards}
+  .play #splash-p1,.play #splash-p2{animation-duration:.01s,.01s;animation-delay:0s}
+  .play .splash-rise{animation-duration:.01s;animation-delay:0s}
+  .splash{transition-duration:.01s}
+}
+</style>
+</head>
+<body>
+
+<div class="splash" id="splash" role="img" aria-label="Hello, I'm Kishore S.">
+  <div class="splash-glow" aria-hidden="true"></div>
+  <div class="splash-hero">
+    <svg viewBox="0 0 638 200" aria-hidden="true">
+      <path id="splash-p1" class="splash-stroke" pathLength="1" d="M8.69214 166.553C36.2393 151.239 61.3409 131.548 89.8191 98.0295C109.203 75.1488 119.625 49.0228 120.122 31.0026C120.37 17.6036 113.836 7.43883 101.759 7.43883C88.3598 7.43883 79.9231 17.6036 74.7122 40.9363C69.005 66.5793 64.7866 96.0036 54.1166 190.356"/>
+      <path id="splash-p2" class="splash-stroke" pathLength="1" d="M55.1624 181.135C60.6251 133.114 81.4118 98.0479 107.963 98.0479C123.844 98.0479 133.937 110.703 131.071 128.817C129.457 139.487 127.587 150.405 125.408 163.06C122.869 178.941 130.128 191.348 152.122 191.348C184.197 191.348 219.189 173.523 237.097 145.915C243.198 136.509 245.68 128.073 245.928 119.884C246.176 104.996 237.739 93.8296 222.851 93.8296C203.992 93.8296 189.6 115.17 189.6 142.465C189.6 171.745 205.481 192.341 239.208 192.341C285.066 192.341 335.86 137.292 359.199 75.8585C365.788 58.513 368.26 42.4065 368.26 31.1512C368.26 17.8057 364.042 7.55823 352.131 7.55823C340.469 7.55823 332.777 16.6141 325.829 30.9129C317.688 47.4967 311.667 71.4162 309.203 98.4549C303 166.301 316.896 191.348 349.936 191.348C390 191.348 434.542 135.534 457.286 75.6686C463.803 58.513 466.275 42.4065 466.275 31.1512C466.275 17.8057 462.057 7.55823 450.146 7.55823C438.484 7.55823 430.792 16.6141 423.844 30.9129C415.703 47.4967 409.682 71.4162 407.218 98.4549C401.015 166.301 414.911 191.348 444.416 191.348C473.874 191.348 489.877 165.67 499.471 138.402C508.955 111.447 520.618 94.8221 544.935 94.8221C565.035 94.8221 580.916 109.71 580.916 137.75C580.916 168.768 560.792 192.093 535.362 192.341C512.984 192.589 498.285 174.475 499.774 147.179C501.511 116.907 519.873 94.8221 543.943 94.8221C557.839 94.8221 569.51 100.999 578.682 107.725C603.549 125.866 622.709 114.656 630.047 96.7186"/>
+    </svg>
+    <div class="splash-intro">
+      <h1 class="splash-rise splash-r1">I'm Kishore S.</h1>
+      <p class="splash-role splash-rise splash-r2">Third-year IT student at Sri Sairam Engineering College. I build web apps and AI systems that solve real problems.</p>
+      <div class="splash-skip-hint splash-rise splash-r2">Click anywhere or press Esc to enter</div>
+    </div>
+  </div>
+</div>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<nav aria-label="Primary">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">KISHORE S</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#ieee">IEEE</a>
+      <a href="#volunteering">Volunteering</a>
+      <a href="#certs">Certifications</a>
+      <a href="#vault">Vault</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="w">
+    <div class="hero-inner">
+      <div style="flex:1">
+        <p class="mu" style="letter-spacing:.3em;font-size:13px">BUILD. LEARN. LEAD. CONTRIBUTE.</p>
+        <h1>KISHORE S</h1>
+        <p class="sub">B.Tech IT Student | Aspiring Full-Stack Web Developer</p>
+        <p style="max-width:620px;color:var(--tx);opacity:.85;font-size:1.05rem">Passionate about web development, emerging technologies, research, innovation, leadership, and community-driven initiatives.</p>
+        <div class="tags" id="htags"></div>
+        <div class="btns">
+          <a class="btn p" href="#about">Explore My Journey</a>
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="#achievements">View Achievements</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+        <div class="btns" id="socials"></div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-dot"></div>
+        <div class="hero-photo-dot"></div>
+        <div class="hero-photo-dot"></div>
+        <div class="hero-photo-inner">
+          <img src="kishore_photo.jpg" alt="Kishore S" class="hero-photo">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="w rv">
+    <h2>About</h2>
+    <p>Learn → Build → Participate → Lead → Research → Contribute → Grow</p>
+    <div class="stats" id="stats"></div>
+    <p>I completed my schooling at Gokilambal International School (CBSE). My academic results earned me admission to B.Tech Information Technology at Sri Sairam Engineering College through counseling. I am currently in my third year, with a strong foundation in Java, HTML, CSS and MySQL, and basic knowledge of Python and C.</p>
+    <p class="mu">I enjoy coding, exploring new technologies, hackathons, technical events, rapid prototyping and experimenting with modern AI development tools.</p>
+    <div class="flow" style="margin-top:20px">
+      <strong>Timeline:</strong>
+      <span>Gokilambal International School — 10th: 84%, 12th: 91.2%</span><i>→</i>
+      <span>Sri Sairam Engineering College — B.Tech IT, 3rd Year, CGPA 8.9 (up to 4th sem)</span>
+    </div>
+
+    <!-- Resume Showcase -->
+    <div class="resume-showcase">
+      <div class="resume-glow-bg" aria-hidden="true"></div>
+      <div class="resume-sheet-wrap">
+        <a href="Kishore_S_Resume.pdf" target="_blank" rel="noopener" class="resume-sheet" title="Click to view full resume">
+          <img src="resume_preview.png" alt="Kishore S Resume Preview">
+          <div class="resume-overlay">
+            <span>Click to View Fullscreen ↗</span>
+          </div>
+        </a>
+      </div>
+      <div class="resume-details">
+        <span class="resume-badge">CURRICULUM VITAE · 2026</span>
+        <h3>Kishore S — Resume</h3>
+        <p>Complete background spanning education, full-stack & AI projects, NPTEL gold certifications, hackathon awards, and IEEE leadership activities.</p>
+        
+        <div class="resume-meta-grid">
+          <div class="resume-meta-item">
+            <span class="label">Program</span>
+            <span class="val">B.Tech IT · Sri Sairam Engineering</span>
+          </div>
+          <div class="resume-meta-item">
+            <span class="label">Performance</span>
+            <span class="val">CGPA: 8.9 (up to 4th Sem)</span>
+          </div>
+          <div class="resume-meta-item">
+            <span class="label">Specialization</span>
+            <span class="val">Full-Stack Web & AI Systems</span>
+          </div>
+          <div class="resume-meta-item">
+            <span class="label">Document</span>
+            <span class="val">PDF (Single Page · Verified)</span>
+          </div>
+        </div>
+
+        <div class="resume-actions">
+          <a href="Kishore_S_Resume.pdf" target="_blank" rel="noopener" class="btn p" style="padding:10px 20px">
+            View Fullscreen PDF ↗
+          </a>
+          <a href="Kishore_S_Resume.pdf" download="Kishore_S_Resume.pdf" class="btn" style="padding:10px 20px">
+            Download PDF ↓
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="w rv">
+    <h2>Technical Skills</h2>
+    <p>Categories, not percentages.</p>
+    <div class="grid" id="skillgrid"></div>
+    <h2 style="margin-top:44px;font-size:1.4rem">How I Build</h2>
+    <div class="flow" id="how"></div>
+    <p class="mu" style="margin-top:12px">AI-assisted tools support rapid prototyping; engineering fundamentals remain the foundation.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="w rv">
+    <h2>Projects</h2>
+    <p>Six builds across AI/LLM engineering, full-stack products, client work, hackathon platforms, and systems software.</p>
+    <div class="grid" id="projgrid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"></div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="w rv">
+    <h2>Research & Innovation</h2>
+    <p>IC3IoT 2026 — Sri Sairam Engineering College</p>
+    <div class="card">
+      <small>RESEARCH PAPER</small>
+      <h3>Click2Ration: A Smart Digital Platform for Secure and Transparent Last-Mile Delivery in India’s Public Distribution System</h3>
+      <p class="mu">Accepted at the 2026 International Conference on Communication, Computing and Internet of Things (IC3IoT).</p>
+      <div class="steps">
+        <span class="on">ACCEPTED</span>
+        <span class="on">PRESENTED</span>
+        <span class="on">PUBLICATION IN PROCESS</span>
+      </div>
+      <div id="resph"></div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="w rv">
+    <h2>Achievements</h2>
+    <p>Hackathons, pitches and recognitions.</p>
+    <div class="grid" id="achgrid"></div>
+    <h2 style="margin-top:44px;font-size:1.4rem">Final-Stage Milestones</h2>
+    <div class="grid" id="miles"></div>
+  </div>
+</section>
+
+<section id="ieee">
+  <div class="w rv">
+    <h2>My IEEE Journey</h2>
+    <p>Roles and leadership evolution in IEEE Reliability Society and related chapters.</p>
+    <div class="flow" id="ca"></div>
+    <div class="grid" id="roles" style="margin-top:18px"></div>
+  </div>
+</section>
+
+<section id="volunteering">
+  <div class="w rv">
+    <h2>My Contributions So Far</h2>
+    <p>Volunteering for student branch chapters, affinity groups and technical events.</p>
+    <div class="grid" id="volgrid"></div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="w rv">
+    <h2>Certifications & Scholarship</h2>
+    <p>NPTEL Elite certifications and ARAM academic scholarship.</p>
+    <div class="grid" id="certgrid"></div>
+  </div>
+</section>
+
+<section id="vault">
+  <div class="w rv">
+    <h2>Credentials Vault</h2>
+    <p>Official academic and institutional service verification records. Nothing is fabricated.</p>
+    <div class="grid" id="vaultgrid"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="w rv" style="text-align:center">
+    <h2>Let’s Build Something Meaningful</h2>
+    <p>I am always interested in learning, collaborating, building innovative solutions, exploring emerging technologies, and contributing to meaningful projects.</p>
+    <p>Kishore S · Chennai, Tamil Nadu, India · +91 9345533001</p>
+    <div class="btns" style="justify-content:center" id="cbtns"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="w footer-inner">
+    <div class="footer-left">
+      <div class="footer-prog">B.Tech Information Technology · Sri Sairam Engineering College</div>
+      <p class="footer-motto">Building, learning, leading, and contributing across technology, research, and communities.</p>
+      <div class="footer-copy">© 2026 Kishore S. Verified records and credentials preserved.</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-name">KISHORE S</div>
+      <a href="#" class="back-to-top">Back to Top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ===== DATA ===== */
+const LINKS=[
+  {n:"Email",u:"mailto:senthilkishore21012007@gmail.com"},
+  {n:"LinkedIn",u:"https://www.linkedin.com/in/kishores-"},
+  {n:"GitHub",u:"https://github.com/Kishore-dev-21"}
+];
+
+const HERO_TAGS=["B.Tech IT '28","Full-Stack Web Dev","AI Systems & LLM Agents","Research & IEEE","Hackathon Winner"];
+
+const STATS=[
+  ["8.90","CGPA (up to 4th Sem)"],
+  ["6","Projects Built"],
+  ["5","Hackathons & Awards"],
+  ["1","IEEE Conference Paper"],
+  ["3","NPTEL Elite Certs"]
+];
+
+const SKILLS=[
+  {
+    category:"Programming & Core CS",
+    badge:"LANGUAGES",
+    skills:["Java (OOP)","Python","C","Data Structures & Algorithms"]
+  },
+  {
+    category:"Full-Stack & Web Engineering",
+    badge:"FRONTEND & WEB",
+    skills:["React 19","TypeScript","JavaScript (ES6+)","Tailwind CSS","HTML5 / CSS3","Vite"]
+  },
+  {
+    category:"Database & Backend Systems",
+    badge:"BACKEND & DATA",
+    skills:["MySQL (Relational)","FastAPI","SQLite","SQLAlchemy ORM","REST APIs","JWT & RBAC"]
+  },
+  {
+    category:"AI & Intelligent Systems",
+    badge:"AI & LLMS",
+    skills:["Google Gemini / GenAI","Prompt Engineering","LLM Tool Agents","NL-to-SQL","Recharts & Mermaid"]
+  },
+  {
+    category:"Developer Tools & Workflow",
+    badge:"TOOLS & DEVOPS",
+    skills:["Git & GitHub","VS Code","Google AI Studio","Antigravity / Kiro","MySQL Workbench","Agile / Scrum"]
+  }
+];
+
+const HOW=["Learn","Prompt / Prototype","Review Code","Refactor","Test & Debug","Deploy"];
+
+const PROJECTS=[
+  {
+    t:"DataMind AI",
+    s:"iTech AI Innovation Hackathon 2026 · Team SwiftTech",
+    tagline:"Ask your database questions in plain English — get SQL, charts, and insights back.",
+    d:"Conversational database analytics platform built on the Brazilian E-Commerce dataset (Olist). Translates natural language into secure read-only SQL via Google Gemini, executes queries dynamically, auto-generates interactive Recharts visualizations, and computes AI-powered trend analysis.",
+    features:[
+      "Natural language to SQL via Gemini with schema-aware prompt injection",
+      "Secure read-only execution layer: blocks DROP, DELETE, UPDATE, ALTER, INSERT, CREATE",
+      "Dynamic auto-charting (bar, line, area, pie, scatter) via Recharts with fullscreen mode",
+      "AI-generated business insights: trends, category leaders, and anomaly explanations",
+      "Mermaid-rendered Entity Relationship (ER) diagrams generated from live database schema",
+      "Paginated, filterable data explorer across 8 tables (orders, customers, products, payments, sellers, reviews)",
+      "Eight-module analytics dashboard: KPIs, Revenue, Orders, Products, Customers, Explorer, EDA, Quality",
+      "Data quality monitoring with null tracking and schema pre-validation"
+    ],
+    tech:"React 19 · TypeScript · Vite · Tailwind CSS · TanStack Router · Zustand · FastAPI · Python · Pandas · SQLAlchemy · SQLite · Google Gemini GenAI SDK · Recharts · Mermaid",
+    repo:"https://github.com/Kishore-dev-21/DataMind_AI",
+    demo:"https://data-mind-ai-eken.vercel.app/",
+    video:"https://youtu.be/Qu4EPjvnV_E",
+    category:"AI / LLM Engineering"
+  },
+  {
+    t:"EduLink+",
+    s:"Smart Campus Platform · IEEE Paper Linked",
+    tagline:"A role-based smart campus platform connecting students and staff in one place.",
+    d:"React + TypeScript single-page application with separate student and staff routing. Centralizes events, study materials, exam schedules, lost-and-found, notifications, and scholarships with an integrated conversational AI assistant and resume ATS scoring engine.",
+    features:[
+      "Role-based access routing separating Student and Staff navigation & dashboards",
+      "AI Smart Assistant for answering campus queries on events, exams, materials, and scholarships",
+      "Skill Intelligence engine with resume upload, certificate parsing, and ATS scoring rubric",
+      "Opportunity match engine matching internships, hackathons, and scholarships to student profile",
+      "End-to-end application tracker (Applied → Shortlisted → Accepted)",
+      "Department-wise study material repository and centralized exam schedule publisher",
+      "Staff analytics dashboard: department engagement, placement readiness, skill gap heatmaps"
+    ],
+    tech:"React 18 · TypeScript · Vite 5 · Tailwind CSS 3 · Context API · Lucide React · date-fns · Supabase (configured) · Netlify",
+    repo:"https://github.com/Kishore-dev-21/EduLink",
+    demo:"https://leafy-pasca-10c6dd.netlify.app/",
+    category:"Full-Stack Web App"
+  },
+  {
+    t:"SGE Innovative Toolcraftt × Aluzin Diecastings",
+    s:"Production Client Corporate Website · Chennai, India",
+    tagline:"Production SSR corporate website for a Chennai precision die-casting manufacturer.",
+    d:"Server-side-rendered marketing and manufacturing capability platform for integrated mould-design and high-pressure die casting facilities. Features an interactive 11-stage component lifecycle journey, filterable industrial product catalogue, 3D toolroom tour, and validated RFQ engine.",
+    features:[
+      "SSR architecture via TanStack Start & Nitro for instant first paint and SEO discovery",
+      "Interactive 11-stage component manufacturing lifecycle: CAD → Toolroom → HPDC → CNC → CMM → Dispatch",
+      "Filterable die-cast catalogue across automotive, industrial, electrical, appliance, and valve categories",
+      "Dedicated facility tour pages for the 4,800 sq.ft. toolroom and 4,800 sq.ft. casting floor",
+      "Custom industrial design system in OKLCH palette with spark-particle canvas effect",
+      "Scroll-linked motion system via Framer Motion AnimationProvider and blueprint grid motif",
+      "Validated procurement RFQ enquiry form with React Hook Form + Zod"
+    ],
+    tech:"TanStack Start · TanStack Router · React 19 · TypeScript · Tailwind CSS v4 · Framer Motion 11 · Radix UI · Zod · Nitro · Vercel",
+    repo:"https://github.com/Kishore-dev-21/SGE-Innovative-Toolcraftt-Pvt-Ltd",
+    demo:"https://endtoend-fabricate-main.vercel.app/",
+    category:"Production Client Work"
+  },
+  {
+    t:"ZENTRIX 2026",
+    s:"National-Level Technical Symposium Portal · IEEE Reliability Society",
+    tagline:"National symposium platform handling registrations, rules, and rounds for 7 events.",
+    d:"Production event portal for ZENTRIX 2026, the annual national technical symposium hosted by the IEEE Reliability Society Student Branch Chapter at Sri Sairam Engineering College. Managed seven technical and non-technical events with rulebooks, round breakdowns, registration pipelines, and WhatsApp integration.",
+    features:[
+      "Multi-event architecture: 7 detailed event portals (Paper Presentation, Web Design, Coding, Gaming, etc.)",
+      "Comprehensive event rulebooks with 100-point judging rubrics published upfront",
+      "Live registration routing connected to Google Forms with custom team/solo validations",
+      "Co-lead direct communication links via WhatsApp API for real-time participant support",
+      "Sponsor and IEEE executive committee showcase with interactive cards and social links"
+    ],
+    tech:"React 19 · TypeScript · Vite · Tailwind CSS · Lucide React · Vercel",
+    repo:"https://github.com/Kishore-dev-21/ZENTRIX-2026",
+    demo:"https://zentrix2026.vercel.app/",
+    category:"Event Engineering"
+  },
+  {
+    t:"Click2Ration User Portal",
+    s:"IEEE IC3IoT 2026 Research Project & MSME Idea Hackathon 6.0",
+    tagline:"Transparent, secure last-mile ration distribution with OTP authentication and live tracking.",
+    d:"Citizen-facing portal of the Click2Ration platform (accepted at IEEE IC3IoT 2026). Replaces manual queue-based public distribution with digital ration ordering, entitlement quota validation, home delivery slot booking, biometric/OTP doorstep proof-of-delivery, and bilingual English/Tamil support.",
+    features:[
+      "Ration card and OTP authentication with automatic family member entitlement fetching",
+      "Eligibility-based quantity validation preventing over-ordering against government quotas",
+      "Home delivery scheduling with selectable time slots and fair-price shop pickup options",
+      "Live e-commerce style order tracking showing assigned delivery agent status and ETA",
+      "Doorstep proof-of-delivery verification via OTP/biometric with timestamped digital e-receipt",
+      "Bilingual interface supporting English and Tamil for accessibility"
+    ],
+    tech:"React · TypeScript · Vite · Tailwind CSS · Lucide React · FastAPI backend · MySQL / SQLite · Vercel",
+    repo:"https://github.com/Kishore-dev-21/Click2Ration-User-Portal",
+    demo:"https://click2-ration-user-portal.vercel.app/",
+    category:"E-Governance Platform"
+  },
+  {
+    t:"DEEPSYNC",
+    s:"Smart India Hackathon 2026 · PS SIH26067 · INCOIS, Ministry of Earth Sciences · Team BLUEGEN_606",
+    tagline:"A web-based 3D ocean visualization platform that combines model simulations with real instrument data.",
+    d:"An interactive web platform built for INCOIS (MoES) that fuses numerical ocean model outputs (MOM4, HYCOM, NetCDF) with in-situ instrument observations (Argo floats, moored buoys, satellite altimetry) to produce unified 3D/4D visual data feeds of the Indian Ocean.",
+    features:[
+      "3D/4D Ocean globe & layered depth visualization: temperature, salinity, currents, mixed layer depth",
+      "Multi-source data fusion: gridded NetCDF models aligned with discrete in-situ observations",
+      "Time-slider playback & depth-profile extraction (surface to 2000m) with point-and-click CTD profiles",
+      "Discrepancy engine: highlights divergence between model forecasts and ground-truth buoy measurements",
+      "Role-tailored interfaces: Researchers (NetCDF export), Fishermen (PFZ maps), Disaster Authorities (surge alerts)"
+    ],
+    tech:"React 19 · TypeScript · Vite · Three.js / CesiumJS / Deck.gl · Tailwind CSS · FastAPI · Python · xarray · netCDF4 · NumPy · SciPy",
+    repo:"https://github.com/Kishore-dev-21/DeepSync",
+    category:"3D Geospatial & Ocean Data"
+  }
+];
+
+const ACH=[
+  {
+    t:"DOOMSPHERE Hackathon 2026 — 3rd Prize",
+    s:"IEEE at Sri Sairam Institute of Technology",
+    d:"2-day hackathon, four-member team: brainstorming, development, debugging, presentation. ₹2,000 cash prize.",
+    ph:[{l:"Certificate",src:"doomsphere_certificate.png"},{l:"Team Photo",src:"doomsphere_team_photo.jpg"}]
+  },
+  {
+    t:"AUTOMATION4SDG Pitchfest — SDG 4 Winner",
+    s:"Sri Sairam Engineering College · Quality Education",
+    d:"Solution aligned with UN SDG 4. ₹1,000 cash prize.",
+    ph:[{l:"Certificate",src:"automation4sdg_certificate.png"},{l:"Team Photo",src:"automation4sdg_team_photo.jpg"}]
+  },
+  {
+    t:"ISPA Challenge — Consolation Prize",
+    s:"IEEE SPS Innovative Signal Processing Applications Challenge",
+    d:"Four-member team: proposal, prototype, final presentation, final round. ₹2,000 consolation prize.",
+    ph:[{l:"Certificate",src:"ispa_certificate.png"},{l:"Team Photo",src:"ispa_team_photo.jpg"}]
+  },
+  {
+    t:"AI Evaluathon 2026 — 58th Position",
+    s:"International Build2Gether · Sairam Institutions · with ETH Zürich & Harvard Business School",
+    d:"Problem-solving and AI-focused thinking. ₹2,000 cash prize.",
+    ph:[{l:"Certificate",src:"evaluathon_certificate.jpg"},{l:"Award Ceremony",src:"evaluathon_photo.jpg"}]
+  },
+  {
+    t:"Best Campus Ambassador — ASHES 1.0",
+    s:"WYNTRIX INNOVATIONS (OPC) PRIVATE LIMITED · Winner (ID: WYNTRIX01)",
+    d:"Recognised as the Winner with 29 referrals (highest). Awarded cash prize and internship at WYNTRIX.",
+    ph:[{l:"ASHES 1.0 Best Campus Ambassador Result Announcement (ID: WYNTRIX01)",src:"ashes_ambassador_proof.png"}]
+  }
+];
+
+const MILES=[
+  {
+    t:"MSME Idea Hackathon 6.0 — 2026",
+    s:"Final Stage of Evaluation",
+    d:"Idea: Click2Ration. Selected for the Final Stage of Evaluation of MSME Idea Hackathon 6.0 (Sri Sairam Engineering College Incubation).",
+    ph:[{l:"MSME Idea Hackathon 6.0 Selection Confirmation",src:"msme_milestone_proof.png",pdf:"msme final.pdf"}]
+  },
+  {
+    t:"Smart India Hackathon 2026",
+    s:"Final Internal Stage of Evaluation · SIH26067",
+    d:"Project: DeepSync. Team Bluegen606 nominated as an official participating team for SIH 2026 (Team ID: 156906) — Core Team Member (Team Lead: Dhanush B T).",
+    ph:[{l:"Smart India Hackathon 2026 Team Nomination Proof",src:"sih_milestone_proof.png",pdf:"Gmail - Smart India Hackathon 2026 - Team Leader Login Credentials.pdf"}]
+  }
+];
+
+const ROLES=[
+  {t:"IEEE Volunteer",s:"IEEE Reliability Society",d:"First contributions in event planning, coordination, promotion and on-ground execution."},
+  {t:"Technical Team Co-Lead (former)",s:"IEEE Reliability Society SEC SBC",d:"Supported technical initiatives, event coordination, planning meetings and member engagement."},
+  {t:"MAGIC — Communicator",s:"IEEE Reliability Society SEC SBC",d:"Google Forms for registration and feedback, promotion of webinars and workshops, WhatsApp and social media outreach, member communication."},
+  {t:"Office Bearer",s:"IEEE Industrial Electronics Society (IES) Student Chapter",d:"Current leadership role."},
+  {t:"IEEE HKN Member",s:"Recent achievement",d:"Selected as an IEEE HKN Member.",ph:["IEEE HKN MEMBERSHIP PROOF / CERTIFICATE"]}
+];
+
+const VOL=[
+  {t:"Flutter Fiesta",s:"IEEE RS SEC SBC · First volunteering experience",d:"Captured photos and videos, supported execution, interacted with organizers and speakers."},
+  {t:"Connecting the Dots 4.0",s:"IEEE WIE Madras Section AG · Publicity Team",d:"Promotion, outreach and creative communication; networked with professionals, seniors and alumni."},
+  {t:"IEEE RS Membership Campaign",s:"First-year students of SEC and SIT",d:"Explained IEEE RS benefits, promoted events, documented the campaign, helped students join official channels."},
+  {t:"Chitti BigBang Workshop",s:"IEEE STEM Volunteer · Leo Muthu Stadium, SEC",d:"Supported participants, worked with LMES Chitti professionals, hands-on STEM activities."},
+  {t:"Cyntax Showdown 3.0",s:"IEEE RS SEC SBC · IEEE Education Week",d:"Volunteer for an event with 250+ participants: coordination, participant and round support."},
+  {t:"Student Coordinator — Aptitude Mastery Series",s:"IEEE RS SBC, SEC · 31 July to 21 September 2026",d:"10-episode series: coordinated participants and resource persons, hosted sessions as MC, sent reminders, collected feedback."},
+  {t:"Blood Donation Camp",s:"NSS Volunteer · with HDFC Bank and Lions Club Golden City",d:"Assisted coordination and supported donors."},
+  {t:"Wizard Fest'26",s:"NSS Volunteer · Sri Sairam Institute of Technology",d:"Supported execution and coordination with the volunteer team."},
+  {t:"UBA Volunteer",s:"Unnat Bharat Abhiyan · Sri Sairam Engineering College",d:"Participated in rural community outreach, village development surveys, and community initiatives connecting institutional technical knowledge with rural grassroots needs."}
+];
+
+const CA=["Volunteer","Campus Ambassador — AICSSYC 2025","Campus Ambassador — Zyra Academy","Campus Ambassador — ASHES 1.0","Best Campus Ambassador — ASHES 1.0"];
+
+const CERTS=[
+  {t:"Human Computer Interaction",s:"NPTEL Gold + ELITE · IIIT Delhi · 2026",d:"Score: 95% (Assignments: 25/25, Proctored Exam: 70/75)",ph:[{l:"NPTEL Human Computer Interaction Certificate (Gold + Elite)",src:"nptel_hci_certificate.png"}]},
+  {t:"The Joy of Computing using Python",s:"NPTEL Silver + ELITE · IIT Madras · 2025",d:"Score: 86% (Assignments: 24.75/25, Proctored Exam: 60.75/75)",ph:[{l:"NPTEL Python Certificate (Silver + Elite)",src:"nptel_python_certificate.png"}]},
+  {t:"Programming in Java",s:"NPTEL Gold + ELITE · IIT Kharagpur · 2025",d:"Score: 92% (Assignments: 24.88/25, Proctored Exam: 67.5/75)",ph:[{l:"NPTEL Programming in Java Certificate (Gold + Elite)",src:"nptel_java_certificate.png"}]},
+  {t:"ARAM Scholarship — ₹30,000",s:"4-year engineering journey · Academic merit",d:"First year based on cutoff 184.5; subsequent years based on CGPA and PGPA. Verified in institutional LMS scholarship records.",ph:[{l:"ARAM Scholarship LMS Record",src:"aram_scholarship_proof.png"}]}
+];
+
+const VAULT=[
+  {
+    t:"Academic Records",
+    s:"Sri Sairam Engineering College · Official Mentor Report",
+    d:"CGPA: 8.90 (up to 4th semester) · Standing Arrears: 0. Verified semester-wise university results and 100% attendance records.",
+    ph:[{l:"Official Academic Mentor Report (PDF)",src:"academic_mentor_report_preview.png",pdf:"academic_mentor_report.pdf"}]
+  },
+  {
+    t:"Volunteering & Community Service",
+    s:"IEEE, NSS & STEM Community Outreach · Comprehensive Report",
+    d:"14-page presentation documenting 4 years of volunteering, student branch coordination, campus ambassadorships, and leadership milestones.",
+    ph:[{l:"Volunteering Journey Slide Deck (PDF)",src:"volunteering_journey_preview.png",pdf:"volunteering_journey.pdf"}]
+  }
+];
+
+/* ===== Components ===== */
+const $=id=>document.getElementById(id);
+
+const ph=(label,src,pdf)=>src?`<a href="${encodeURI(pdf||src)}" target="_blank" rel="noopener" style="display:block;margin-top:10px;text-decoration:none" title="Click to open ${pdf?'PDF':'image'}"><img src="${src}" alt="${label}" style="width:100%;border-radius:8px;border:1px solid var(--bd);display:block;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='none'">${pdf?`<span class="btn" style="display:block;margin-top:8px;text-align:center;font-size:12px;padding:6px 10px;border-color:var(--ac);color:var(--ac)">View Proof PDF ↗</span>`:""}</a>`:`<div class="ph">[PLACEHOLDER — ${label}]</div>`;
+
+const card=c=>{
+  const isMulti=c.ph&&c.ph.length>1;
+  const phs=(c.ph||[]).map(p=>{
+    if(typeof p==="string")return ph(p);
+    const link=encodeURI(p.pdf||p.src);
+    const imgStyle=isMulti?'width:100%;height:130px;object-fit:cover;object-position:center;border-radius:8px;border:1px solid var(--bd);display:block;transition:transform .2s':'width:100%;border-radius:8px;border:1px solid var(--bd);display:block;transition:transform .2s';
+    const subLabel=isMulti&&p.l?`<span style="display:block;margin-top:5px;font-size:11px;color:var(--mu);text-align:center;font-weight:500">${p.l}</span>`:'';
+    return `<a href="${link}" target="_blank" rel="noopener" style="display:block;margin-top:8px;text-decoration:none" title="Click to view ${p.l||'image'}"><img src="${p.src}" alt="${p.l||''}" style="${imgStyle}" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='none'">${subLabel}${p.pdf?`<span class="btn" style="display:block;margin-top:8px;text-align:center;font-size:12px;padding:6px 10px;border-color:var(--ac);color:var(--ac)">View Proof PDF ↗</span>`:''}</a>`;
+  });
+  const body=isMulti?`<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2px">${phs.join("")}</div>`:phs.join("");
+  return `<article class="card">${c.s?`<small>${c.s}</small>`:""}<h3>${c.t}</h3>${c.d?`<p class="mu" style="margin:6px 0 0;font-size:14px">${c.d}</p>`:""}${body}</article>`;
+};
+
+const list=(id,a)=>$(id).innerHTML=a.map(card).join("");
+
+/* Render Core Sections */
+$("htags").innerHTML=HERO_TAGS.map(t=>`<span class="tag">${t}</span>`).join("");
+$("socials").innerHTML=LINKS.map(l=>`<a class="btn" href="${l.u}" target="_blank" rel="noopener">${l.n}</a>`).join("");
+$("cbtns").innerHTML=LINKS.map(l=>`<a class="btn" href="${l.u}" target="_blank" rel="noopener">${l.n}</a>`).join("");
+$("stats").innerHTML=STATS.map(s=>`<div class="stat"><b>${s[0]}</b><span>${s[1]}</span></div>`).join("");
+
+/* Clean Technical Skills */
+$("skillgrid").innerHTML=SKILLS.map(cat=>`
+  <div class="skill-card">
+    <div class="skill-card-top">
+      <h3>${cat.category}</h3>
+      <small>${cat.badge}</small>
+    </div>
+    <div class="skill-tags">
+      ${cat.skills.map(s=>`
+        <span class="skill-pill">
+          <span class="skill-dot"></span>${s}
+        </span>
+      `).join("")}
+    </div>
+  </div>
+`).join("");
+
+$("how").innerHTML=HOW.map(h=>`<span>${h}</span>`).join("<i>→</i>");
+$("ca").innerHTML=CA.map(c=>`<span>${c}</span>`).join("<i>→</i>");
+
+/* Research Proofs */
+const RESEARCH_PROOFS=[
+  {
+    num:"01",
+    label:"RESEARCH PAPER PDF",
+    title:"Click2Ration: IEEE Conference Paper",
+    sub:"Camera-ready research paper (6 pages) for the 2026 International Conference on Communication, Computing and Internet of Things (IC3IoT).",
+    pdf:"Click2Ration paper.pdf",
+    img:"research_paper_preview.png",
+    btn:"View Research Paper (PDF)"
+  },
+  {
+    num:"02",
+    label:"ACCEPTANCE LETTER",
+    title:"Official Paper Selection & Instructions",
+    sub:"Acceptance email from Microsoft CMT for Paper 98 (Click2Ration) with camera-ready preparation instructions.",
+    pdf:"Gmail - Paper Selection and Camera-Ready Submission Instructions.pdf",
+    img:"research_acceptance.png",
+    btn:"View Acceptance Letter (PDF)"
+  },
+  {
+    num:"03",
+    label:"CONFERENCE CERTIFICATE",
+    title:"IC3IoT 2026 Certificate of Merit",
+    sub:"Paper presentation certificate awarded to Kishore S by Sri Sairam Engineering College & IEEE Madras Section.",
+    pdf:"paper certificate.pdf",
+    img:"research_certificate.png",
+    btn:"View Conference Certificate (PDF)"
+  }
+];
+
+$("resph").innerHTML=`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px">
+${RESEARCH_PROOFS.map(p=>`
+  <div class="card" style="display:flex;flex-direction:column;gap:8px;background:var(--bg2)">
+    <div>
+      <small style="font-weight:700;color:var(--ac);letter-spacing:.05em">PROOF ${p.num} · [PLACEHOLDER — ${p.label}]</small>
+    </div>
+    <h4 style="margin:0;font-size:14px;color:var(--tx)">${p.title}</h4>
+    <p class="mu" style="font-size:12px;margin:0;line-height:1.5">${p.sub}</p>
+    <a href="${encodeURI(p.pdf)}" target="_blank" rel="noopener" style="display:block;border-radius:8px;overflow:hidden;border:1px solid var(--bd);margin-top:6px;background:var(--card)" title="Click to open ${p.pdf}">
+      <img src="${p.img}" alt="${p.label}" style="width:100%;height:180px;object-fit:cover;object-position:top;display:block;transition:transform .2s" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='none'">
+    </a>
+    <a href="${encodeURI(p.pdf)}" target="_blank" rel="noopener" class="btn" style="margin-top:auto;text-align:center;font-size:13px;padding:8px 12px;border-color:var(--ac);color:var(--ac);text-decoration:none">
+      ${p.btn} ↗
+    </a>
+  </div>`).join("")}
+</div>`;
+
+/* Project Cards */
+(function(){
+  const plinks = (l, label) => l ? `<a href="${l}" target="_blank" rel="noopener" class="proj-btn">${label} ↗</a>` : '';
+  const featlist = arr => {
+    if(!arr || !arr.length) return '';
+    const rest = arr.slice(4).map(f => `<li>${f}</li>`).join('').replace(/'/g, "&#39;");
+    const more = arr.length > 4 ? `<li style="list-style:none;color:var(--ac);cursor:pointer;font-weight:600" onclick="var p=this.parentElement;this.remove();p.insertAdjacentHTML('beforeend','${rest}')">+ ${arr.length - 4} more…</li>` : '';
+    return `<ul style="margin:8px 0 0;padding-left:18px;font-size:13px;color:var(--mu);line-height:1.6">` + arr.slice(0, 4).map(f => `<li>${f}</li>`).join('') + more + `</ul>`;
+  };
+
+  $('projgrid').innerHTML = PROJECTS.map(p => `
+    <article class="card" style="display:flex;flex-direction:column;justify-content:space-between">
+      <div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+          <small style="margin:0">${p.category || 'PROJECT'}</small>
+        </div>
+        <h3>${p.t}</h3>
+        ${p.s ? `<div class="mu" style="font-size:12px;margin-bottom:8px;font-weight:500">${p.s}</div>` : ''}
+        ${p.tagline ? `<p style="font-size:13.5px;color:var(--ac);font-style:italic;margin:6px 0 10px">${p.tagline}</p>` : ''}
+        <p class="mu" style="font-size:13.5px;margin:0 0 10px">${p.d}</p>
+        ${featlist(p.features)}
+      </div>
+      <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)">
+        <div class="mu" style="font-size:11.5px;margin-bottom:14px;line-height:1.4"><strong>Tech:</strong> ${p.tech}</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          ${plinks(p.demo, 'Live Demo')}
+          ${plinks(p.repo, 'GitHub')}
+          ${plinks(p.video, 'Video Demo')}
+        </div>
+      </div>
+    </article>
+  `).join('');
+})();
+
+/* Render Other Lists */
+list("achgrid", ACH);
+list("miles", MILES);
+list("volgrid", VOL);
+list("certgrid", CERTS);
+$("roles").innerHTML = ROLES.map(card).join("");
+$("vaultgrid").innerHTML = VAULT.map(card).join("");
+
+/* ===== Reveal on Scroll ===== */
+const RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("in")),{threshold:.08});
+document.querySelectorAll(".rv").forEach(n=>io.observe(n));
+
+/* ===== 3D Dynamic Card Tilt with Specular Glare ===== */
+(function(){
+  if(RM) return;
+  
+  var cards = document.querySelectorAll(".card, .skill-card, .resume-showcase");
+  cards.forEach(function(card){
+    var shine = document.createElement("div");
+    shine.className = "card-shine";
+    card.appendChild(shine);
+    
+    var bounds;
+    function updateBounds(){ bounds = card.getBoundingClientRect(); }
+    
+    card.addEventListener("mouseenter", function(){
+      updateBounds();
+      card.style.transition = "transform .12s ease-out, box-shadow .2s ease";
+      shine.style.opacity = "1";
+    });
+    
+    card.addEventListener("mousemove", function(e){
+      if(!bounds) updateBounds();
+      var mouseX = e.clientX - bounds.left;
+      var mouseY = e.clientY - bounds.top;
+      var xPct = mouseX / bounds.width - 0.5;
+      var yPct = mouseY / bounds.height - 0.5;
+      
+      var rotX = -yPct * 8; // gentle 4deg tilt
+      var rotY = xPct * 8;
+      
+      card.style.transform = "perspective(1000px) rotateX(" + rotX.toFixed(2) + "deg) rotateY(" + rotY.toFixed(2) + "deg) scale3d(1.015, 1.015, 1.015)";
+      shine.style.background = "radial-gradient(circle at " + (xPct*100 + 50).toFixed(1) + "% " + (yPct*100 + 50).toFixed(1) + "%, rgba(255,255,255,.14) 0%, rgba(255,255,255,0) 60%)";
+    });
+    
+    card.addEventListener("mouseleave", function(){
+      card.style.transition = "transform .55s cubic-bezier(.2,.8,.2,1), box-shadow .55s ease";
+      card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+      shine.style.opacity = "0";
+    });
+  });
+})();
+
+/* ===== 3D Geometric Space & Constellation Canvas ===== */
+(function(){
+  var cv = document.getElementById("bg");
+  if(!cv) return;
+  var ctx = cv.getContext("2d");
+  var W, H, mob = innerWidth < 700;
+  var N = mob ? 45 : 85;
+  var mouseX = 0, mouseY = 0, targetRotX = 0, targetRotY = 0, curRotX = 0, curRotY = 0;
+  var fl = 420; // 3D focal length
+
+  function resize(){
+    W = cv.width = innerWidth;
+    H = cv.height = innerHeight;
+  }
+  resize();
+  addEventListener("resize", resize);
+
+  addEventListener("mousemove", function(e){
+    mouseX = (e.clientX - W/2) / (W/2);
+    mouseY = (e.clientY - H/2) / (H/2);
+    targetRotY = mouseX * 0.35;
+    targetRotX = -mouseY * 0.35;
+  });
+
+  // 3D Nodes
+  var nodes = [];
+  for(var i = 0; i < N; i++){
+    nodes.push({
+      x: (Math.random() - 0.5) * W * 1.2,
+      y: (Math.random() - 0.5) * H * 1.2,
+      z: (Math.random() - 0.5) * 500,
+      vx: (Math.random() - 0.5) * 0.35,
+      vy: (Math.random() - 0.5) * 0.35,
+      vz: (Math.random() - 0.5) * 0.35,
+      radius: Math.random() * 2 + 1.2,
+      color: i % 3 === 0 ? "rgba(90,162,255," : (i % 3 === 1 ? "rgba(167,139,250," : "rgba(96,176,255,")
+    });
+  }
+
+  // 3D Floating Wireframe Geometric Polyhedra
+  function createOctahedron(size, cx, cy, cz, rotSpeedX, rotSpeedY){
+    return {
+      cx: cx, cy: cy, cz: cz,
+      size: size,
+      rotX: Math.random() * Math.PI,
+      rotY: Math.random() * Math.PI,
+      rotZ: Math.random() * Math.PI,
+      spX: rotSpeedX,
+      spY: rotSpeedY,
+      vertices: [
+        [0, -size, 0], [size, 0, 0], [0, 0, size],
+        [-size, 0, 0], [0, 0, -size], [0, size, 0]
+      ],
+      edges: [
+        [0,1],[0,2],[0,3],[0,4],
+        [5,1],[5,2],[5,3],[5,4],
+        [1,2],[2,3],[3,4],[4,1]
+      ]
+    };
+  }
+
+  var polyhedra = [
+    createOctahedron(55, -W*0.28, -H*0.2, -50, 0.006, 0.008),
+    createOctahedron(70, W*0.32, H*0.15, 30, -0.005, 0.007),
+    createOctahedron(45, -W*0.15, H*0.3, -120, 0.007, -0.005)
+  ];
+
+  function project(x, y, z){
+    var scale = fl / (fl + z);
+    return {
+      x: W/2 + x * scale,
+      y: H/2 + y * scale,
+      scale: scale,
+      visible: (fl + z) > 0
+    };
+  }
+
+  function rotateY(x, z, angle){
+    var cos = Math.cos(angle), sin = Math.sin(angle);
+    return { x: x * cos - z * sin, z: x * sin + z * cos };
+  }
+
+  function rotateX(y, z, angle){
+    var cos = Math.cos(angle), sin = Math.sin(angle);
+    return { y: y * cos - z * sin, z: y * sin + z * cos };
+  }
+
+  function animate(){
+    ctx.clearRect(0, 0, W, H);
+
+    curRotX += (targetRotX - curRotX) * 0.05;
+    curRotY += (targetRotY - curRotY) * 0.05;
+
+    // 1. Draw 3D Floating Polyhedra
+    polyhedra.forEach(function(poly){
+      poly.rotX += poly.spX;
+      poly.rotY += poly.spY;
+
+      var transformedVerts = poly.vertices.map(function(v){
+        var r1 = rotateY(v[0], v[2], poly.rotY);
+        var r2 = rotateX(v[1], r1.z, poly.rotX);
+        var wx = poly.cx + r1.x;
+        var wy = poly.cy + r2.y;
+        var wz = poly.cz + r2.z;
+        var pr1 = rotateY(wx, wz, curRotY * 0.5);
+        var pr2 = rotateX(wy, pr1.z, curRotX * 0.5);
+        return project(pr1.x, pr2.y, pr2.z);
+      });
+
+      ctx.lineWidth = 1;
+      poly.edges.forEach(function(edge){
+        var p1 = transformedVerts[edge[0]];
+        var p2 = transformedVerts[edge[1]];
+        if(p1.visible && p2.visible){
+          var avgScale = (p1.scale + p2.scale) * 0.5;
+          var alpha = Math.max(0.04, Math.min(0.25, (avgScale - 0.4) * 0.45));
+          ctx.strokeStyle = "rgba(90, 162, 255, " + alpha.toFixed(3) + ")";
+          ctx.beginPath();
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.stroke();
+        }
+      });
+
+      transformedVerts.forEach(function(p){
+        if(p.visible){
+          var alpha = Math.max(0.06, Math.min(0.45, (p.scale - 0.4) * 0.7));
+          ctx.fillStyle = "rgba(167, 139, 250, " + alpha.toFixed(3) + ")";
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, Math.max(1, 2.5 * p.scale), 0, Math.PI * 2);
+          ctx.fill();
+        }
+      });
+    });
+
+    // 2. Update & Draw 3D Nodes
+    var projectedNodes = [];
+    nodes.forEach(function(node){
+      node.x += node.vx;
+      node.y += node.vy;
+      node.z += node.vz;
+
+      if(node.x < -W*0.6) node.x = W*0.6;
+      if(node.x > W*0.6) node.x = -W*0.6;
+      if(node.y < -H*0.6) node.y = H*0.6;
+      if(node.y > H*0.6) node.y = -H*0.6;
+      if(node.z < -250) node.z = 250;
+      if(node.z > 250) node.z = -250;
+
+      var pr1 = rotateY(node.x, node.z, curRotY);
+      var pr2 = rotateX(node.y, pr1.z, curRotX);
+      var proj = project(pr1.x, pr2.y, pr2.z);
+
+      if(proj.visible){
+        projectedNodes.push({ p: proj, node: node });
+        var alpha = Math.max(0.08, Math.min(0.6, (proj.scale - 0.4) * 0.8));
+        ctx.fillStyle = node.color + alpha.toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.arc(proj.x, proj.y, Math.max(0.8, node.radius * proj.scale), 0, Math.PI * 2);
+        ctx.fill();
+      }
+    });
+
+    // 3. Draw 3D Constellation Connections
+    var maxConnDist = mob ? 90 : 130;
+    for(var i = 0; i < projectedNodes.length; i++){
+      for(var j = i + 1; j < projectedNodes.length; j++){
+        var p1 = projectedNodes[i].p;
+        var p2 = projectedNodes[j].p;
+        var dx = p1.x - p2.x;
+        var dy = p1.y - p2.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if(dist < maxConnDist){
+          var lineAlpha = (1 - dist / maxConnDist) * 0.16 * ((p1.scale + p2.scale) * 0.5);
+          ctx.strokeStyle = "rgba(90, 162, 255, " + lineAlpha.toFixed(3) + ")";
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    if(!RM) requestAnimationFrame(animate);
+  }
+
+  if(RM){
+    animate();
+  } else {
+    requestAnimationFrame(animate);
+  }
+})();
+
+/* ===== Splash Intro Controller ===== */
+(function () {
+  var SHOW_FOR_MS = 6500;
+  var splash = document.getElementById('splash');
+  if (!splash) return;
+  var done = false;
+
+  function enter() {
+    if (done) return;
+    done = true;
+    splash.classList.add('leave');
+    document.documentElement.style.overflow = '';
+    setTimeout(function () {
+      if (splash && splash.parentNode) splash.parentNode.removeChild(splash);
+    }, 1000);
+  }
+
+  document.documentElement.style.overflow = 'hidden';
+  setTimeout(function () { document.body.classList.add('play'); }, 250);
+  setTimeout(enter, SHOW_FOR_MS);
+
+  splash.addEventListener('click', enter);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === 'Escape' || e.key === ' ') enter();
+  });
+})();
+</script>
+</body>
+</html>

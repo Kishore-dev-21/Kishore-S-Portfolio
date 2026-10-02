@@ -1,0 +1,359 @@
+KISHORE S
+B.Tech IT Student (3rd Year) at Sri Sairam Engineering College | Aspiring Full-Stack Web Developer | Communicator (MAGIC Member) – IEEE RS & Web Master (Office Bearer) in IEEE IES |  Leadership & Community Volunteer
+IEEE Member 4years
+I completed my schooling at Gokilambal International School (CBSE), securing 84% in 10th grade and 91.2% in 12th grade, which enabled me to gain admission to B.Tech Information Technology at Sri Sairam Engineering College through counseling.
+I am currently in my third year, with a CGPA of 8.9 (up to 4th semester), and I am passionate about web development and emerging technologies. I have a strong foundation in Java, HTML, CSS, and MySQL, along with basic knowledge of Python and C programming.
+I actively participate in technical and community-driven initiatives, serving as a Communicator (MAGIC Member) in the IEEE Reliability Society, and as a Campus Ambassador for AICSSYC, WYNTRIX (ASHES 1.0), and Zyra Academy. Additionally, I contribute to social impact activities as an NSS and UBA Volunteer.
+These experiences have strengthened my leadership, teamwork, communication, and time management skills, while reinforcing my passion for leveraging technology to build meaningful and impactful solutions.
+Beyond academics, I enjoy coding, exploring new technologies, and participating in hackathons and technical events, which continuously fuel my creativity and problem-solving mindset.
+In this you extract the necessary details for about 
+Location: Chennai 
+Email: senthilkishore21012007@gmail.com
+Phone: +91 9345533001
+Linkedin: https://www.linkedin.com/in/kishore-s-it
+leetcode: https://leetcode.com/u/Kishoredev-21/
+GitHub: https://github.com/Kishore-dev-21
+my research paper is accepted in 2026 International Conference on Communication, Computing and Internet of Things (IC3IoT) which is in Sri Sairam engineering college of my project Click2Ration: A Smart Digital Platform for Secure and Transparent Last-Mile 
+Delivery in India’s Public Distribution System and i presented it is in process of publishing
+
+achievements
+DOOMSPHERE Hackathon 2026 – 3rd Prize Winner
+Secured 3rd Prize at the 2-day DOOMSPHERE Hackathon 2026, organized by IEEE at Sri Sairam Institute of Technology. Collaborated with a four-member team to brainstorm, develop, debug, and present a solution within a time-constrained environment, earning a ₹2,000 cash prize.
+
+Participated in AI Evaluathon 2026, presented by International Build2Gether at Sairam Institutions in collaboration with ETH Zürich and Harvard Business School. Secured 58th position and won a ₹2,000 cash prize, demonstrating problem-solving and technical skills in a competitive AI-focused environment.
+
+ISPA – Innovative Signal Processing Applications Challenge | Consolation Prize Winner
+Participated in the IEEE SPS Innovative Signal Processing Applications Challenge as part of a four-member team. Successfully progressed through proposal submission, prototype development, and final presentation, reaching the final round and securing a ₹2,000 Consolation Prize for applying signal processing concepts to a real-world problem.
+
+AUTOMATION4SDG Pitchfest – SDG 4 Goal Winner
+Won the SDG 4 – Quality Education category at the AUTOMATION4SDG Pitchfest hosted by Sri Sairam Engineering College, receiving a ₹1,000 cash prize for presenting an impactful solution aligned with the United Nations Sustainable Development Goal of Quality Education.
+
+selection for the Final Stage of Evaluation of MSME Idea Hackathon 6.0 2026!
+which has been cleared internal college rounds and we applied our click2ration idea in MSME portal
+
+selection for the Final internal Stage of Evaluation of SIH 2026 of problem statement ID: SIH26067
+which has been cleared internal college rounds and we applied our DeepsSync: A web-based 3D ocean visualization platform that combines model simulations with real instrument data.
+
+Certifications:
+NPTEL — Gold + ELITE
+Programming in Java
+92%
+IIT Kharagpur
+2025
+
+NPTEL — Silver + ELITE
+The Joy of Computing using Python
+86%
+IIT Madras
+2025
+
+NPTEL — Gold + ELITE
+Human Computer Interaction (In English)
+95%
+IIIT Delhi
+2026
+
+Skills
+
+Programming:
+Java
+Python
+C
+
+Web:
+HTML
+CSS
+JavaScript
+
+Database:
+MySQL
+
+Tools:
+Git
+GitHub
+Lovable
+Google Ai studio
+Google Antigravity
+Kiro
+and i made rapid prototypes with using optimized prompts and like prompt injection and many vibe coding 
+
+coordinators and Volunteers:
+Student Coordinator – IEEE Reliability Society SBC, SEC | Aptitude Mastery Series
+Served as a Student Coordinator for the 10-episode Aptitude Mastery Series conducted over nearly two months from 31 July to 21 September 2026. Coordinated with participants and resource persons, hosted sessions as MC, managed communication and reminders, collected feedback, and ensured smooth session execution. Independently handled sessions when required, strengthening leadership, communication, coordination, teamwork, confidence, and adaptability.
+
+
+# KISHORE. S — My Contributions So Far
+
+
+> “Every event volunteered, every challenge accepted, and every experience gained helped shape my professional and personal growth.”
+
+### My Volunteering Journey
+
+
+# 1. IEEE Volunteering Journey
+
+Began my IEEE volunteering journey through the **IEEE RS Society**, which provided my first opportunity to contribute to professional and technical activities.
+
+Actively participated as a dedicated volunteer in **IEEE RS Society** and various **IEEE Student Branch** initiatives.
+
+Contributed to the successful organization of both technical and non-technical events conducted under IEEE.
+
+Assisted in event planning, coordination, promotion, and on-ground execution of activities.
+
+Supported member engagement initiatives and helped strengthen the IEEE community within the college.
+
+Collaborated with fellow volunteers, chapter officers, and organizing teams to ensure smooth event execution.
+
+Promoted IEEE activities, opportunities, and membership benefits among students.
+
+Developed valuable skills in teamwork, communication, leadership, event management, and problem-solving.
+
+Learned the importance of responsibility, collaboration, innovation, and professional networking through volunteering experiences.
+
+### Journey Reflection
+
+> "My first volunteering experience in the IEEE RS Society marked the beginning of an enriching journey in IEEE. It laid the foundation for taking on greater responsibilities, developing leadership qualities, and contributing more effectively to the student community."
+
+
+
+---
+
+# 2. Connecting the Dots 4.0 – IEEE WIE Madras Section
+
+Volunteered for **Connecting the Dots 4.0**, organized by the **IEEE Women in Engineering(WIE) Madras Section Affinity Group**.
+
+Served as a member of the **Publicity Team**, contributing to event promotion and outreach activities.
+
+Gained valuable experience in teamwork, event coordination, and creative communication.
+
+Had the opportunity to interact with working professionals, seniors from various colleges, and alumni from my own institution.
+
+Learned from the experiences and guidance shared by industry professionals and senior volunteers.
+
+Enhanced my networking, communication, and interpersonal skills through meaningful interactions.
+
+Developed a deeper understanding of the impact of volunteering in professional and personal growth.
+
+Contributed to the success of an event that encouraged learning, collaboration, and community engagement.
+
+> "Connecting the Dots 4.0 was a memorable volunteering experience that expanded my professional network and strengthened my confidence. It showed me how volunteering can create opportunities for learning, collaboration, and personal development."
+
+
+
+---
+
+# 3. Flutter Fiesta – My First Volunteering Experience
+
+**Flutter Fiesta** was my first volunteering experience under **IEEE RS SEC SBC**.
+
+I was assigned the responsibility of capturing photographs and videos throughout the event.
+
+This role allowed me to closely observe the event's organization and execution.
+
+Despite being new to volunteering, I actively participated and contributed to the success of the event.
+
+I interacted with organizers, speakers, and participants, which helped improve my communication skills.
+
+The event provided valuable exposure to technical learning, teamwork, and event management.
+
+Through this experience, I gained confidence and a better understanding of the responsibilities of an IEEE volunteer.
+
+### Reflection
+
+> "Flutter Fiesta marked the beginning of my volunteering journey. Capturing the event not only helped document memorable moments but also gave me firsthand experience in teamwork, responsibility, and professional event management."
+
+
+
+---
+
+# 4. From Volunteer to Campus Ambassador – A Journey of Leadership and Impact
+
+My active involvement in IEEE and student communities opened opportunities to represent organizations as a **Campus Ambassador**.
+
+Selected as a **Campus Ambassador for AICSSYC 2025**, promoting technology, innovation, and networking opportunities among students.
+
+Chosen as a **Campus Ambassador at Zyra Academy**, supporting student engagement and learning initiatives.
+
+Appointed as **Campus Ambassador (ASHES 1.0)** at **WYNTRIX INNOVATIONS (OPC) PRIVATE LIMITED**.
+
+Actively promoted events, workshops, and professional development opportunities within the student community.
+
+Strengthened my leadership, communication, marketing, and networking skills through these ambassadorial roles.
+
+### Major Achievement
+
+Recognized as the **Best Campus Ambassador** in **ASHES 1.0** for outstanding performance and contribution.
+
+Awarded a **Cash Prize of ₹500** for achieving the highest level of engagement and participation.
+
+
+
+---
+
+# 5. IEEE RS Membership Campaign – My First Outreach Experience
+
+This was my first experience promoting **IEEE RS Society** to first-year students of **SEC** and **SIT**.
+
+Actively participated in the membership campaign and student outreach activities.
+
+Interacted with first-year students and introduced them to the benefits and opportunities offered by IEEE RS.
+
+Assisted in creating awareness about IEEE events, technical communities, and professional development activities.
+
+Captured photos and documented campaign activities for records and promotions.
+
+Helped interested students join the official IEEE RS communication channels, including the WhatsApp group.
+
+Developed confidence in public interaction, communication, and student engagement.
+
+Gained valuable experience in networking, promotion, and community building.
+
+
+
+---
+
+
+
+---
+
+# 7. Chitti BigBang Workshop – IEEE STEM Volunteer
+
+Volunteered for the **Chitti BigBang Workshop** conducted at **Sri Sairam Engineering College**, held at the **Leo Muthu Stadium**.
+
+Represented **IEEE STEM** as a volunteer and contributed to the successful execution of the workshop.
+
+Assisted in coordinating activities and supporting participants throughout the event.
+
+Interacted with working professionals from **LMES Chitti** and gained insights into innovative STEM education approaches.
+
+Explored hands-on STEM activities that demonstrated how technology can make learning engaging and impactful.
+
+Collaborated with fellow volunteers to ensure smooth event management and participant engagement.
+
+Enhanced my communication, teamwork, leadership, and event coordination skills through active involvement.
+
+
+
+---
+
+# 8. NSS Volunteering and Community Service
+
+## Blood Donation Camp
+
+Participated in my first NSS volunteering activity through the **Blood Donation Camp** organized by **Sri Sairam Engineering College** in association with **HDFC Bank and Lions Club Golden City**.
+
+Assisted in coordinating activities and supporting donors throughout the event.
+
+Witnessed the positive impact of community service and the importance of contributing to society.
+
+Learned valuable lessons about teamwork, responsibility, and social commitment.
+
+## Wizard Fest'26
+
+Had the opportunity to volunteer again through NSS at **Wizard Fest'26** conducted at **Sri Sairam Institute of Technology**.
+
+Worked alongside a dedicated team of volunteers to support the smooth execution of the event.
+
+Interacted with students from different colleges and built meaningful connections.
+
+Improved my communication, coordination, and teamwork skills through active participation.
+
+
+
+---
+
+# 9. Cyntax Showdown 3.0 – IEEE Education Week
+
+Volunteered for **Cyntax Showdown 3.0** organized by the **IEEE Reliability Society SEC SBC** as part of **IEEE Education Week**.
+
+Contributed to the successful execution of an event that attracted **more than 250 participants**.
+
+Assisted in event coordination and supported participants throughout various rounds of the competition.
+
+Witnessed innovative ideas, coding solutions, and creative problem-solving approaches presented by participants.
+
+Collaborated with fellow volunteers and organizers to ensure the smooth conduct of the event.
+
+Experienced the excitement of managing a large-scale technical competition and engaging with enthusiastic participants.
+
+Contributed to creating a platform that encouraged learning, innovation, and healthy competition among students.
+
+
+
+---
+
+# 10. MAGIC (Communicator) – IEEE Reliability Society SEC SBC
+
+Created **Google Forms** for event registrations, feedback collection, and participant management.
+
+Promoted webinars, workshops, and events through **WhatsApp groups and social media platforms**.
+
+Supported communication and outreach activities to increase event visibility and participant engagement.
+
+Assisted in sharing announcements, updates, and important information with IEEE RS members.
+
+Contributed to strengthening connections between the chapter and its members through effective communication.
+
+Worked closely with the organizing team to ensure smooth coordination of IEEE RS activities and events.
+
+Helped improve member participation and awareness through consistent engagement efforts.
+
+### Key Contributions
+
+* Registration & Feedback Management
+* Event Promotion & Outreach
+* Member Engagement & Communication
+* Social Media & WhatsApp Coordination
+* Event Participation Support
+
+
+
+---
+
+# 11. Leadership Roles and Growth in IEEE
+
+Started my IEEE journey as a volunteer and gradually took on greater responsibilities through active participation and consistent contributions.
+
+Served as the **Technical Team Co-Lead** in **IEEE Reliability Society SEC SBC**, supporting technical initiatives, event coordination, and team activities.
+
+Actively participated in meetings, planning discussions, and collaborative projects, gaining valuable leadership and organizational experience.
+
+Worked closely with team members to strengthen communication, engagement, and event execution within the chapter.
+
+Promoted to the role of **MAGIC (Communicator)** in **IEEE Reliability Society SEC SBC**, contributing to community engagement and member communication.
+
+Responsible for sharing announcements, promoting events, managing communication channels, and increasing member participation.
+
+Appointed as an **Office Bearer** in **Industrial Electronics Society (IES) Student Chapter**, taking on additional leadership responsibilities.
+
+
+
+---
+
+# 12. Volunteering, Leadership & Achievements
+
+## Volunteering
+
+Actively volunteered in IEEE, NSS, and community service initiatives.
+
+Contributed to events such as **Flutter Fiesta, Cyntax Showdown 3.0, Connecting the Dots 4.0, Chitti BigBang Workshop, Wizard Fest'26, and Blood Donation Camp**.
+
+## Leadership
+
+**MAGIC (Communicator), IEEE Reliability Society SEC SBC.**
+
+**Former Technical Team Co-Lead, IEEE Reliability Society SEC SBC.**
+
+**Office Bearer, Student Chapter.**
+
+**Campus Ambassador for AICSSYC 2025, Zyra Academy, and ASHES 1.0.**
+
+**Best Campus Ambassador – ASHES 1.0 (₹500).**
+
+> "From volunteer to leader, every experience helped me grow in communication, teamwork, leadership, and professional development."
+
+
+also importantly add now i am promoted IEEE Hkn Member 
+also important for scholarship i got ARAM Scholarship amount of 30000 of all the 4 years of my engineering 4year journey based on my Cutoff 184.5 in my 1st year they provide and the next year they provide based on my CGPA and PGPA
+
+

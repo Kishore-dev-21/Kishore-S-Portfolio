@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello — Apple Style Animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* Subtle gradient background like Apple */
+    .bg-gradient {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, #111 0%, #000 70%);
+      z-index: 0;
+    }
+
+    /* Floating particles */
+    .particles {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0;
+      animation: floatParticle var(--dur) ease-in-out infinite var(--delay);
+    }
+
+    @keyframes floatParticle {
+      0%   { opacity: 0; transform: translateY(0) scale(0.5); }
+      20%  { opacity: var(--max-op); }
+      80%  { opacity: var(--max-op); }
+      100% { opacity: 0; transform: translateY(-120px) scale(1.2); }
+    }
+
+    /* Main stage */
+    .stage {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* Hello word container */
+    .hello-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Glow ring behind text */
+    .glow-ring {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1);   opacity: 0.5; }
+      50%       { transform: scale(1.1); opacity: 1;   }
+    }
+
+    /* The SVG text path */
+    .hello-svg {
+      position: relative;
+      z-index: 2;
+      width: min(90vw, 700px);
+      height: auto;
+      overflow: visible;
+    }
+
+    /* Each word's path */
+    .word-path {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      filter: drop-shadow(0 0 12px rgba(255,255,255,0.7))
+              drop-shadow(0 0 30px rgba(255,255,255,0.3));
+    }
+
+    /* Draw-on keyframe */
+    @keyframes drawOn {
+      0%   { stroke-dashoffset: var(--len); opacity: 0; }
+      5%   { opacity: 1; }
+      55%  { stroke-dashoffset: 0; opacity: 1; }
+      75%  { stroke-dashoffset: 0; opacity: 1; }
+      90%  { stroke-dashoffset: 0; opacity: 0; }
+      100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+
+    /* Fade-in shimmer text (non-SVG fallback layer) */
+    .hello-text {
+      position: absolute;
+      z-index: 3;
+      font-size: clamp(60px, 12vw, 130px);
+      font-weight: 200;
+      letter-spacing: -2px;
+      color: #fff;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-style: italic;
+      text-shadow:
+        0 0 20px rgba(255,255,255,0.8),
+        0 0 60px rgba(255,255,255,0.3),
+        0 0 100px rgba(255,255,255,0.1);
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* Language cycling words */
+    .lang-word {
+      position: absolute;
+      z-index: 5;
+      font-size: clamp(60px, 12vw, 130px);
+      font-weight: 200;
+      letter-spacing: -2px;
+      color: #fff;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-style: italic;
+      text-shadow:
+        0 0 20px rgba(255,255,255,0.8),
+        0 0 60px rgba(255,255,255,0.3),
+        0 0 100px rgba(255,255,255,0.1);
+      opacity: 0;
+      transform: scale(0.85) translateY(10px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      white-space: nowrap;
+    }
+
+    .lang-word.active {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+
+    .lang-word.exit {
+      opacity: 0;
+      transform: scale(1.08) translateY(-10px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Language label */
+    .lang-label {
+      position: fixed;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.35);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      z-index: 20;
+      transition: opacity 0.4s ease;
+    }
+
+    /* Tagline */
+    .tagline {
+      position: fixed;
+      bottom: 88px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.18);
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      z-index: 20;
+      white-space: nowrap;
+    }
+
+    /* Shimmer overlay on text */
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position:  200% center; }
+    }
+
+    .shimmer-text {
+      background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #ffffff 40%,
+        #adf7ff 50%,
+        #ffffff 60%,
+        #ffffff 100%
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 3s linear infinite;
+    }
+
+    /* Progress dots */
+    .dots {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 20;
+    }
+
+    .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .dot.active {
+      background: rgba(255,255,255,0.8);
+      transform: scale(1.3);
+    }
+
+    /* Intro black curtain fade */
+    .curtain {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      z-index: 100;
+      animation: curtainFade 1.8s ease forwards;
+    }
+
+    @keyframes curtainFade {
+      0%   { opacity: 1; }
+      100% { opacity: 0; pointer-events: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="curtain"></div>
+  <div class="bg-gradient"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="stage">
+    <div class="hello-wrapper">
+      <div class="glow-ring"></div>
+      <!-- Language words cycle here -->
+      <div id="wordContainer" style="position:relative; display:flex; align-items:center; justify-content:center; min-width:300px; min-height:160px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="lang-label" id="langLabel">English</div>
+  <div class="tagline">Designed by Apple</div>
+  <div class="dots" id="dots"></div>
+
+<script>
+  // ── Language data ──────────────────────────────────────────────────────────
+  const words = [
+    { text: 'Hello',       lang: 'English',    style: '' },
+    { text: 'Hola',        lang: 'Spanish',    style: '' },
+    { text: 'Bonjour',     lang: 'French',     style: '' },
+    { text: 'こんにちは',   lang: 'Japanese',   style: 'font-style:normal; font-family: serif;' },
+    { text: 'Ciao',        lang: 'Italian',    style: '' },
+    { text: '你好',         lang: 'Chinese',    style: 'font-style:normal; font-family: serif;' },
+    { text: 'Olá',         lang: 'Portuguese', style: '' },
+    { text: 'Hallo',       lang: 'German',     style: '' },
+    { text: '안녕하세요',   lang: 'Korean',     style: 'font-style:normal; font-family: serif;' },
+    { text: 'Salve',       lang: 'Latin',      style: '' },
+    { text: 'مرحبا',       lang: 'Arabic',     style: 'font-style:normal; direction:rtl;' },
+    { text: 'Привет',      lang: 'Russian',    style: '' },
+    { text: 'Namaste',     lang: 'Hindi',      style: '' },
+    { text: 'Merhaba',     lang: 'Turkish',    style: '' },
+    { text: 'Sawubona',    lang: 'Zulu',       style: '' },
+  ];
+
+  // ── Build dots ─────────────────────────────────────────────────────────────
+  const dotsEl = document.getElementById('dots');
+  words.forEach((_, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    dotsEl.appendChild(d);
+  });
+
+  // ── Build particles ────────────────────────────────────────────────────────
+  const particlesEl = document.getElementById('particles');
+  for (let i = 0; i < 40; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 3 + 1;
+    const x    = Math.random() * 100;
+    const y    = Math.random() * 100;
+    const dur  = (Math.random() * 6 + 4).toFixed(1) + 's';
+    const del  = (Math.random() * 8).toFixed(1) + 's';
+    const op   = (Math.random() * 0.15 + 0.05).toFixed(2);
+    p.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${x}%; top:${y}%;
+      background:rgba(255,255,255,${op * 3});
+      --dur:${dur}; --delay:-${del}; --max-op:${op};
+    `;
+    particlesEl.appendChild(p);
+  }
+
+  // ── Word cycling logic ─────────────────────────────────────────────────────
+  const container   = document.getElementById('wordContainer');
+  const langLabel   = document.getElementById('langLabel');
+  const dotNodes    = dotsEl.querySelectorAll('.dot');
+  let current       = null;
+  let index         = 0;
+
+  function showWord(idx) {
+    const data = words[idx];
+
+    // Remove previous
+    if (current) {
+      current.classList.remove('active');
+      current.classList.add('exit');
+      const dying = current;
+      setTimeout(() => dying.remove(), 600);
+    }
+
+    // Create new
+    const el = document.createElement('div');
+    el.className = 'lang-word shimmer-text';
+    el.textContent = data.text;
+    if (data.style) el.setAttribute('style', data.style);
+    container.appendChild(el);
+    current = el;
+
+    // Trigger transition
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => el.classList.add('active'));
+    });
+
+    // Update label
+    langLabel.textContent = data.lang;
+
+    // Update dots
+    dotNodes.forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+
+  // Initial word after curtain fades
+  setTimeout(() => {
+    showWord(0);
+
+    // Cycle every 1.8 s
+    setInterval(() => {
+      index = (index + 1) % words.length;
+      showWord(index);
+    }, 1800);
+  }, 1600);
+
+  // ── Subtle mouse-parallax on glow ring ────────────────────────────────────
+  const ring = document.querySelector('.glow-ring');
+  document.addEventListener('mousemove', (e) => {
+    const cx = window.innerWidth  / 2;
+    const cy = window.innerHeight / 2;
+    const dx = (e.clientX - cx) / cx;
+    const dy = (e.clientY - cy) / cy;
+    ring.style.transform = `translate(${dx * 20}px, ${dy * 20}px) scale(1)`;
+  });
+</script>
+</body>
+</html>
