@@ -293,6 +293,56 @@ h1{
   .play .splash-rise{animation-duration:.01s;animation-delay:0s}
   .splash{transition-duration:.01s}
 }
+/* ===== IEEE Journey One by One Stack ===== */
+.ieee-roles-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  margin-top: 20px !important;
+  max-width: 880px;
+}
+.ieee-roles-stack .card {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Splash Hello SVG Animation Fix ===== */
+.splash {
+  background: #070b16 !important;
+}
+.splash-stage {
+  width: min(84vw, 620px);
+  margin: 0 auto;
+}
+.splash svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+.splash-stroke {
+  fill: none !important;
+  stroke: #ffffff !important;
+  stroke-width: 14.8883;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+}
+body.play #splash-p1, .play #splash-p1, #splash.play #splash-p1 {
+  animation: splash-draw 0.9s ease-in-out forwards, splash-show 0.4s ease-in-out forwards !important;
+}
+body.play #splash-p2, .play #splash-p2, #splash.play #splash-p2 {
+  animation: splash-draw 2.8s ease-in-out 0.6s forwards, splash-show 0.6s ease-in-out 0.6s forwards !important;
+}
+@keyframes splash-draw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes splash-show {
+  to { opacity: 1; }
+}
 </style>
 </head>
 <body>
@@ -408,7 +458,7 @@ h1{
           </div>
           <div class="resume-meta-item">
             <span class="label">Document</span>
-            <span class="val">PDF (Single Page · Verified)</span>
+            <span class="val">PDF (Single Page)</span>
           </div>
         </div>
 
@@ -477,7 +527,7 @@ h1{
     <h2>My IEEE Journey</h2>
     <p>Roles and leadership evolution in IEEE Reliability Society and related chapters.</p>
     <div class="flow" id="ca"></div>
-    <div class="grid" id="roles" style="margin-top:18px"></div>
+    <div id="roles" class="ieee-roles-stack"></div>
   </div>
 </section>
 
@@ -1176,7 +1226,9 @@ document.querySelectorAll(".rv").forEach(n=>io.observe(n));
   }
 
   document.documentElement.style.overflow = 'hidden';
-  setTimeout(function () { document.body.classList.add('play'); }, 250);
+  document.body.classList.add('play');
+  if (splash) splash.classList.add('play');
+  setTimeout(function () { document.body.classList.add('play'); if (splash) splash.classList.add('play'); }, 100);
   setTimeout(enter, SHOW_FOR_MS);
 
   splash.addEventListener('click', enter);
