@@ -248,8 +248,19 @@ h1{
 /* Splash intro screen */
 /* ================= SPLASH (intro screen from Kishore S. – Intro.html) ================= */
 .splash {
-  position: fixed; inset: 0; z-index: 99999;
-  display: grid; place-items: center;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: -webkit-fill-available;
+  z-index: 99999;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: env(safe-area-inset-top, 24px) 24px env(safe-area-inset-bottom, 24px) !important;
+  box-sizing: border-box;
   background: var(--bg);
   overflow: hidden;
   cursor: pointer;
@@ -260,8 +271,8 @@ h1{
 .splash .glow {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(42vmax 30vmax at 38% 46%, var(--glow-a, rgba(90, 110, 255, .38)), transparent 70%),
-    radial-gradient(38vmax 28vmax at 64% 56%, var(--glow-b, rgba(190, 90, 255, .26)), transparent 70%);
+    radial-gradient(42vmax 35vmax at 50% 48%, var(--glow-a, rgba(90, 110, 255, .38)), transparent 70%),
+    radial-gradient(38vmax 30vmax at 52% 52%, var(--glow-b, rgba(190, 90, 255, .26)), transparent 70%);
   opacity: 0;
   animation: splash-glow-in 2.4s ease-out .2s forwards, splash-breathe 14s ease-in-out 2.6s infinite alternate;
 }
@@ -270,10 +281,16 @@ h1{
 
 .splash .hero {
   position: relative;
-  display: flex; flex-direction: column; align-items: center;
-  width: min(86vw, 640px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(88vw, 640px);
+  max-width: 640px;
+  margin: auto 0 !important;
   text-align: center;
   z-index: 2;
+  box-sizing: border-box;
 }
 .splash svg { display: block; width: 100%; height: auto; overflow: visible; }
 
@@ -286,7 +303,7 @@ h1{
 @keyframes splash-draw { to { stroke-dashoffset: 0; } }
 @keyframes splash-show { to { opacity: 1; } }
 
-.splash .intro { margin-top: clamp(28px, 6vh, 56px); }
+.splash .intro { margin-top: clamp(24px, 4.5vh, 48px); }
 .splash .rise { opacity: 0; transform: translateY(14px); }
 .play .rise { animation: splash-rise .9s cubic-bezier(.2,.7,.2,1) forwards; }
 .play .r1 { animation-delay: 3.5s; }
@@ -307,7 +324,7 @@ h1{
 .splash .role {
   margin: .75rem auto 0;
   max-width: 40ch;
-  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  font-size: clamp(0.95rem, 2.4vw, 1.2rem);
   line-height: 1.45;
   color: var(--mu, #a1a1a6);
 }
